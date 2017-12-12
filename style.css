@@ -1,7 +1,37 @@
 * {
-    font-family: "Cabin", sans-serif;
+  font-family: "Cabin", sans-serif;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
 header {
-    text-align: center;
+  position: fixed;
+  width: 100%;
+  top: -12px;
+  padding: 0px 10px;
+  z-index: 10;
+  background-color: #ffc405;
+}
+
+nav {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.sections {
+  display: inline-block;
+  width: 80px;
+}
+
+.site-title {
+  display: inline-block;
+}
+
+.content {
+  position: relative;
+  top: 70px;
+  margin: 20px 20px;
 }
