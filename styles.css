@@ -1,10 +1,10 @@
-@import url(http://fonts.googleapis.com/css?family=Cabin:400,700);
+@import url('https://fonts.googleapis.com/css?family=Cabin:400,700');
 
 /* general */
 body {
 	color: #555;
 	margin: 0;
-	font-family: Cabin	, sans-serif;
+	font-family: "Cabin", sans-serif;
 }
 
 .container {
