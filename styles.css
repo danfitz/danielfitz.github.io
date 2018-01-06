@@ -10,12 +10,15 @@ body {
 
 h1, h2, h3, h4 {
   color: #fff;
-  text-shadow: 2px 2px 5px black;
-  font-size: 2rem;
+  text-shadow: 0.3vw 0.3vw 1vw black;
 }
 
+h1 {font-size: 6vw;}
+h2 {font-size: 5vw;}
+h3 {font-size: 4vw;}
+
 p {
-  font-size: 1.5rem;
+  font-size: 3vw;
 }
 
 /* Content */
@@ -44,12 +47,17 @@ p {
 }
 
 #header-author {
-  height: 10rem;
-  width: 10rem;
+  height: 12vw;
+  width: 12vw;
   display: block;
-  margin: 0 auto;
-  padding: 40px;
+  margin: 40px auto;
+	padding: 0;
   border-radius: 180px;
+	border: 0.5vw solid #333;
+}
+
+#header-author:hover {
+	border: 0.5vw solid #ffc405;
 }
 
 #header a {
@@ -65,15 +73,14 @@ p {
 }
 
 #header-nav {
-  list-style: none inside;
 }
 
-#header-nav li {
-  font-size: 2.5rem;
+#header-nav a {
+  font-size: 5vw;
 }
 
 #header-title {
-  font-size: 7rem;
+  font-size: 8vw;
 }
 
 /* Posts */
@@ -87,6 +94,7 @@ p {
 
 .post-container:nth-child(even) {
 	background-color: #FFCF36;
+	color: #222;
 }
 
 /* Footer */
