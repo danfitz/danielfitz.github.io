@@ -3,6 +3,7 @@
 
 /* General */
 body {
+	box-sizing: border-box;
   font-family: Cabin;
   color: #333;
   margin: 0 auto;
@@ -10,22 +11,22 @@ body {
 
 h1, h2, h3, h4 {
   color: #fff;
-  text-shadow: 0.3vw 0.3vw 1vw black;
+  text-shadow: 0.3vmax 0.3vmax 1vmax black;
 }
 
-h1 {font-size: 6vw;}
-h2 {font-size: 5vw;}
-h3 {font-size: 4vw;}
+h1 {font-size: 6vmax;}
+h2 {font-size: 5vmax;}
+h3 {font-size: 4vmax;}
 
 p {
-  font-size: 3vw;
+  font-size: 3vmax;
 }
 
 /* Content */
 
 #content {
   float: left;
-  width: 70%;
+  width: 80%;
   display: block;
   background-color: #ffc405;
 }
@@ -38,7 +39,7 @@ p {
 
 #header {
   float: right;
-  width: 30%;
+  width: 20%;
   height: 100%;
   display: inline-block;
   position: fixed;
@@ -47,17 +48,17 @@ p {
 }
 
 #header-author {
-  height: 12vw;
-  width: 12vw;
+  height: 12vmax;
+  width: 12vmax;
   display: block;
   margin: 40px auto;
 	padding: 0;
   border-radius: 180px;
-	border: 0.5vw solid #333;
+	border: 0.5vmax solid #333;
 }
 
 #header-author:hover {
-	border: 0.5vw solid #ffc405;
+	border: 0.5vmax solid #ffc405;
 }
 
 #header a {
@@ -76,11 +77,11 @@ p {
 }
 
 #header-nav a {
-  font-size: 5vw;
+  font-size: 3vmax;
 }
 
 #header-title {
-  font-size: 8vw;
+  font-size: 5vmax;
 }
 
 /* Posts */
@@ -89,7 +90,7 @@ p {
 }
 
 .post-container {
-  padding: 20px 20px 50px 20px;
+  padding: 2vmax 2vmax 4vmax 2vmax;
 }
 
 .post-container:nth-child(even) {
@@ -109,6 +110,7 @@ p {
   height: 7rem;
   width: 7rem;
   border-radius: 180px;
+	border: 0.3vw solid #ffc405;
 }
 
 #about-footer .container {
