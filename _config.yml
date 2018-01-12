@@ -1,0 +1,3 @@
+name: Dan Fitz
+markdown: kramdown
+permalink: /:year/:month/:day/:title
