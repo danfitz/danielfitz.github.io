@@ -98,15 +98,6 @@ p {
 	color: #222;
 }
 
-.post-container a {
-	text-decoration: none;
-	color: #fff;
-}
-
-.post-container a:hover {
-	color: #4169e1;
-}
-
 /* Footer */
 
 #about-footer {

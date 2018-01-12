@@ -2,13 +2,12 @@
 layout: default
 title: Dan Fitz's Blog
 ---
-<div class="container">
+<div id="posts">
 
 	{% for post in site.posts %}
-		<div class="post">
+		<div class="post-container">
 			<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
 			{{ post.content }}
-			<hr>
 		</div>
 	{% endfor %}
 
