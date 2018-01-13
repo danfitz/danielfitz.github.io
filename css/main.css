@@ -41,6 +41,11 @@ p .meta {
   margin: 0 auto;
 }
 
+.featured-image {
+	background-size: cover;
+	background-position: center;
+}
+
 /* Header */
 
 #header {

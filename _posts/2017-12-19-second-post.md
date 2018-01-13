@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "Hank Quinlan, Horrible Cop, Launches Site"
+title: "Second test post"
 date: 2017-12-19
-category: Jenna Haze
+category: test2
+featured-img: /images/featured/featured-image.jpg
 ---
 
 OKAY DOKAY.
