@@ -83,11 +83,11 @@ p .meta {
 }
 
 #header-nav a {
-  font-size: 3vmax;
+  font-size: 5vmax;
 }
 
 #header-title {
-  font-size: 5vmax;
+  font-size: 8vmax;
 }
 
 /* Posts */
@@ -163,4 +163,13 @@ a:hover .featured-image {
 	p .meta {
 		font-size: 0.75vmax;
 	}
+	
+	#header-nav a {
+		font-size: 3vmax;
+	}
+
+	#header-title {
+		font-size: 5vmax;
+	}
+	
 }
