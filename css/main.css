@@ -114,10 +114,6 @@ p .meta {
 	color: #4169e1;
 }
 
-.post-container p a:visited {
-	color: #7851a9; /* royal purple */
-}
-
 .featured-image {
 	width: 50%;
 	border: 0.5vmax solid white;
