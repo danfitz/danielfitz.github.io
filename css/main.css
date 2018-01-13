@@ -122,7 +122,7 @@ p .meta {
 	width: 50%;
 	border: 0.5vmax solid white;
 	float: right;
-	margin: 2vmax;
+	margin-left: 2vmax;
 }
 
 /* Footer */
