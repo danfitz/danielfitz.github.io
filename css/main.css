@@ -118,8 +118,9 @@ p .meta {
 }
 
 .featured-image {
-	width: 100%;
+	width: 50%;
 	border: 0.5vmax solid white;
+	float: left;
 }
 
 /* Footer */
