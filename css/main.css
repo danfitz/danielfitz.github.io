@@ -83,11 +83,11 @@ p .meta {
 }
 
 #header-nav a {
-  font-size: 5vmax;
+  font-size: 4vmax;
 }
 
 #header-title {
-  font-size: 8vmax;
+  font-size: 6vmax;
 }
 
 /* Posts */
@@ -115,11 +115,9 @@ p .meta {
 }
 
 .featured-image {
-	width: 50%;
+	width: 100%;
 	border: 0.5vmax solid white;
-	float: right;
-	margin-left: 2vmax;
-	margin-bottom: 2vmax;
+	margin: 2vmax;
 }
 
 a:hover .featured-image {
@@ -166,6 +164,12 @@ a:hover .featured-image {
 
 	#header-title {
 		font-size: 5vmax;
+	}
+	
+	.featured-image {
+		width: 50%;
+		float: right;
+		margin: 0 0 2vmax 2vmax;
 	}
 	
 }
