@@ -126,7 +126,7 @@ p .meta {
 	margin-bottom: 2vmax;
 }
 
-.featured-image:hover {
+a:hover .featured-image {
 	border: 0.5vmax solid #4169e1;
 }
 
