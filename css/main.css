@@ -114,7 +114,7 @@ p .meta {
 	color: #4169e1;
 }
 
-.post-container a:visited {
+.post-container p a:visited {
 	color: #7851a9; /* royal purple */
 }
 
