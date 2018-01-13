@@ -22,6 +22,12 @@ p {
   font-size: 3vmax;
 }
 
+p .meta {
+	color: #333;
+	font-style: italic;
+	font-size: 2vmax;
+}
+
 /* Content */
 
 #content {
@@ -107,6 +113,10 @@ p {
 	color: #4169e1;
 }
 
+.post-container a:visited {
+	color: #7851a9; /* royal purple */
+}
+
 /* Footer */
 
 #about-footer {
@@ -124,4 +134,20 @@ p {
 
 #about-footer .container {
   padding: 30px;
+}
+
+/* @media */
+
+@media (min-width: 992px) {
+	h1 {font-size: 3vmax;}
+	h2 {font-size: 2.5vmax;}
+	h3 {font-size: 2vmax;}
+
+	p {
+  	font-size: 1.5vmax;
+	}
+
+	p .meta {
+		font-size: 0.75vmax;
+	}
 }
