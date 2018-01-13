@@ -97,7 +97,7 @@ p .meta {
 
 .post-container {
   padding: 2vmax 2vmax 4vmax 2vmax;
-	clear: right;
+	clear: right; /* this clears the float: right in the .featured-image selector */
 }
 
 .post-container:nth-child(even) {
@@ -122,6 +122,7 @@ p .meta {
 	width: 50%;
 	border: 0.5vmax solid white;
 	float: right;
+	margin: 2vmax;
 }
 
 /* Footer */
