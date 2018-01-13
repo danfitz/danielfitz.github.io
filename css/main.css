@@ -42,6 +42,7 @@ p .meta {
 }
 
 .featured-image {
+	background-size: contain;
 }
 
 /* Header */
