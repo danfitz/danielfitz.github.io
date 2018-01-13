@@ -126,8 +126,8 @@ p .meta {
 	margin-bottom: 2vmax;
 }
 
-a:hover .featured-image {
-	color: #4169e1;
+.featured-image:hover {
+	border: 0.5vmax solid #4169e1;
 }
 
 /* Footer */
