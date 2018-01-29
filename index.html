@@ -6,8 +6,8 @@ title: Dan Fitz's Blog
 
 	{% for post in site.categories.article %}
 		<div class="post-container">
-			<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
 			<a href="{{ post.url }}"><img class="featured-image" src="{{ post.featured-img }}"></a>
+			<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
 			<p>{{ post.excerpt }}</p>
 		</div>
 	{% endfor %}
