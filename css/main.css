@@ -172,4 +172,8 @@ a:hover .featured-image {
 		margin: 0 0 2vmax 2vmax;
 	}
 	
+	.post-container {
+		display: inline-block;
+	}
+	
 }
