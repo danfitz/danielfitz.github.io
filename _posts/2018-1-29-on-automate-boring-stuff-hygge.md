@@ -3,6 +3,7 @@ layout: post
 title: "On Automate the Boring Stuff and hygge"
 date: 2018-1-29
 category: journal
+featured-img: /images/featured/hygge.jpg
 excerpt: I talk about how 1 month of coding has gone so far and how hygge has really improved my happiness.
 ---
 
