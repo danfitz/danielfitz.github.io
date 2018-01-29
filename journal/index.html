@@ -8,11 +8,10 @@ title: Journal
 		
 		<h1>{{ page.title }}</h1>
 
-		<ul class="journal">
-			{% for post in site.categories.journal %}
-			<li>{{ post.date | date_to_string }} ∞ <h3><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3></li>
-			{% endfor %}
-		</ul>	
+		{% for post in site.categories.journal %}
+		<h3><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
+		<p><em>∞ {{ post.date | date_to_string }} ∞</em></p>
+		{% endfor %}
 		
 	</div>
 </div>
