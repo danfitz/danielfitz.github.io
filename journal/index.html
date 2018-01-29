@@ -13,7 +13,7 @@ title: Journal Entries
 		<div class="post-container">
 			<h2><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
 			<p><em>∞ {{ post.date | date_to_string }} ∞</em></p>
-			{{ post.description }}
+			<p>{{ post.excerpt }}</p>
 		</div>
 	{% endfor %}
 
