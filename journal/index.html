@@ -4,14 +4,16 @@ title: Journal
 ---
 
 <div id="posts">
+		
 	<div class="post-container">
-		
 		<h1>{{ page.title }}</h1>
-
-		{% for post in site.categories.journal %}
-		<h3><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
-		<p><em>∞ {{ post.date | date_to_string }} ∞</em></p>
-		{% endfor %}
-		
 	</div>
+
+	{% for post in site.categories.journal %}
+		<div class="post-container">
+			<h2><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+			<p><em>∞ {{ post.date | date_to_string }} ∞</em></p>
+		</div>
+	{% endfor %}
+
 </div>
