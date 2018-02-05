@@ -20,7 +20,6 @@ I'm going to paste it here for reference in the future:
 
 *What makes you a great fit for this role?*
 
-```
 What I bring to the table is a trauma-driven obsession with organization. I spent my entire childhood feeling empty inside, searching for something to fill that hole and instead falling on video games, social media, and online porn to do it.
 
 I know what it means to live in a distracted world.
@@ -40,11 +39,9 @@ Organization is just one of my top skills. Combined with my desire to enter into
 Thanks for your time. And thank you for the opportunity to apply! I hope you have a great day!
 
 And keep doing what you're doing! I really look forward to the work that you guys do!
-```
 
 *Why does Center for Humane Technology's work matter to you personally?*
 
-```
 I think the greatest tragedy in the world is not living your fullest happiest self. Half-living feels like half-dying to me, a wasted use of what could have been a beautiful life.
 
 I guess it comes back to the fact that I know what it's like to feel really empty inside. To have no purpose, no one to love, nothing to live for. Just video games, movies, and porn.
@@ -60,7 +57,6 @@ There are billions of us dealing with unique problems like the paradox of choice
 From a pure arithmetic point-of-view, if everyone in the world only half-lived, it would be equivalent to mass-killing half of the world population.
 
 I want to make sure that doesn't happen.
-```
 
 ***
 
