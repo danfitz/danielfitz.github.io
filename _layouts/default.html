@@ -1,42 +1,19 @@
 <!DOCTYPE html>
-	<html>
-		<!-- HTML head -->
-		<head>
-			<title>{{ page.title }}</title>
-			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/css/main.css">
-		</head>
+<html>
+	<head>
+		<title>{{ page.title }}</title>
+		<!-- link to main stylesheet -->
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
+	</head>
 		
-  <body>
- 
-    <!-- content -->
-    <div id="content">
+	<body>
+		<header>
+			Dan Fitz
+		</header>
+	
+		<content>
+		{{ content }}
+		</content>	
+	</body>
 
-			{{ content }}
-
-      <!-- about footer -->
-      <div id="about-footer">
-        <div class="container">
-          <img id="footer-author" src="/images/icons/me.jpg">
-          <p>I'm a writer, coder, and effective altruist.</p>
-        </div>
-      </div>
-    
-    </div>
-    
-    <!-- header -->
-    <div id="header">
-      <div class="container">
-				<a href="http://danielfitz.github.io"><img id="header-author" src="/images/icons/me.jpg"></a>
-        <a id="header-title" href="http://danielfitz.github.io">Dan Fitz</a>
-        <p id="header-nav">
-		<a href="/journal">Journal</a>
-		<br>
-          	<a href="#about-footer">About</a>
-	</p>	
-      </div>
-    </div>
-    
-  </body>
-		
-	</html>
+</html>
