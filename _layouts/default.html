@@ -1,19 +1,20 @@
-<!DOCTYPE html>
 <html>
-	<head>
-		<title>{{ page.title }}</title>
-		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
-	</head>
-		
-	<body>
-		<header>
-			Dan Fitz
-		</header>
-	
-		<content>
-		{{ content }}
-		</content>	
-	</body>
+  
+  <head>
+    <title>{{ page.title }} - Dan Fitz</title>
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+  </head>
+  
+  <body>
+    <header>
+      <div id="siteTitle">Dan Fitz</div>
+      <div id="siteDescription">This is a place to post my study notes</div>
+    </header>
+    
+    <main>
+      {{ content }}
+    </main>
+  
+  </body>
 
 </html>
