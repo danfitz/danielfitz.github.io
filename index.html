@@ -1,8 +1,10 @@
 ---
 layout: default
-title: Dan Fitz's Blog
+title: Dan Fitz
 ---
 
 {% for category in site.categories %}
-  <div class="boxItem">{{ category | first }}</div>
+  <div class="boxItem">
+    <a href="/{{ category | first }}">{{ category | first }}</a>
+  </div>
 {% endfor %}
