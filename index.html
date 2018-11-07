@@ -2,14 +2,7 @@
 layout: default
 title: Dan Fitz's Blog
 ---
-<div id="posts">
 
-	{% for post in site.categories.article %}
-		<div class="post-container">
-			<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-			<a href="{{ post.url }}"><img class="featured-image" src="{{ post.featured-img }}"></a>
-			<p>{{ post.content }}</p>
-		</div>
-	{% endfor %}
-
-</div>
+{% for category in site.categories %}
+  <div class="boxItem">{{ category }}</div>
+{% endfor %}
