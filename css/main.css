@@ -50,3 +50,12 @@ main {
 .boxItem:hover {
   box-shadow: 0 0 5px 5px #4FF04F;
 }
+
+a, a:visited {
+  text-decoration: none;
+  color: #5050F0;
+}
+
+a:hover {
+  text-shadow: 0 0 2px #5050F0;
+}
