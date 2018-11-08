@@ -39,9 +39,11 @@ main {
   margin: 20px;
   width: 100px;
   height: 100px;
-  line-height: 90px;
   font-size: 14px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .boxItem:hover {
