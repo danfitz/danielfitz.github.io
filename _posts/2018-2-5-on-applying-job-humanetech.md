@@ -2,7 +2,7 @@
 layout: post
 title: "On applying for a job at humanetech.com"
 date: 2018-2-5
-categories: [journal]
+categories: [CS61A]
 tags: [job application, new job, executive assistant, false hope, hope, dreams, reality, humane tech, time well spent, tristan harris, james williams]
 featured-img: /images/featured/paper table.jpg
 excerpt: I talk about how I applied for a job at CHT and the dangers of being overly hopeful about my application.
