@@ -4,7 +4,9 @@ title: Home
 ---
 
 {% for category in site.categories %}
+<a href="/{{ category | first }}">  
   <div class="boxItem">
-    <a href="/{{ category | first }}">{{ category | first }}</a>
+    {{ category | first }}
   </div>
+</a>
 {% endfor %}
