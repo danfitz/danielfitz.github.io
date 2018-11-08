@@ -60,7 +60,7 @@ a:hover {
   text-shadow: 0 0 2px #5050F0;
 }
 
-@media (max-width: 736px) {
+@media (max-width: 750px) {
   #siteTitle {
     font-size: 30vw;
   }
