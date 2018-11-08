@@ -59,3 +59,17 @@ a, a:visited {
 a:hover {
   text-shadow: 0 0 2px #5050F0;
 }
+
+@media (max-width: 900px) {
+  #siteTitle {
+    font-size: 90px;
+  }
+  #siteDescription {
+    font-size: 30px;
+  }
+  .boxItem {
+    width: 200px;
+    height: 200px;
+    font-size: 28px;
+  }
+}
