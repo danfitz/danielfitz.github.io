@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500&amp;subset=latin-ext,vietnamese" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700&amp;subset=vietnamese" rel="stylesheet">
+  <meta name="google-site-verification" content="8zqeFQNuNAWS7ye6oN69hdEeYC_RsDyAlhht79xtAQo" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:image" content="/assets/res/banner.png" />
+
+  
+
+  <title>
+    
+      freeCodeCamp - Responsive Web Design Certification Notes | Dan Fitz
+    
+  </title>
+
+  
+
+  <!-- page's cover -->
+  
+    <meta property="og:image" content="http://localhost:4000/images/defaultCoverPost.png" />
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1234">
+    <meta property="og:image:height" content="592">
+  
+
+  
+
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/res/me.jpg">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="/assets/css/main.css">
+
+  <link rel="stylesheet" href="/assets/css/thi_scss.css">
+
+  
+    
+      <link rel="stylesheet" href="/assets/css/post.css">
+    
+  
+
+  
+
+  <link rel="stylesheet" href="/assets/css/syntax.css">
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+  
+  <!-- Begin Jekyll SEO tag v2.5.0 -->
+<meta name="generator" content="Jekyll v3.7.4" />
+<meta property="og:title" content="freeCodeCamp - Responsive Web Design Certification Notes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="freeCodeCamp - Responsive Web Design Certification Notes" />
+<meta property="og:description" content="freeCodeCamp - Responsive Web Design Certification Notes" />
+<link rel="canonical" href="http://localhost:4000/responsive-web-design-certification-notes" />
+<meta property="og:url" content="http://localhost:4000/responsive-web-design-certification-notes" />
+<meta property="og:site_name" content="Dan Fitz" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-11-07T00:00:00-05:00" />
+<meta name="google-site-verification" content="" />
+<script type="application/ld+json">
+{"description":"freeCodeCamp - Responsive Web Design Certification Notes","@type":"BlogPosting","url":"http://localhost:4000/responsive-web-design-certification-notes","headline":"freeCodeCamp - Responsive Web Design Certification Notes","dateModified":"2018-11-07T00:00:00-05:00","datePublished":"2018-11-07T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/responsive-web-design-certification-notes"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+	<header>
+  
+    <nav class="top-nav teal">
+  <div class="nav-wrapper">
+    <div class="container">
+      <a class="page-title font-title" href="/">Dan Fitz</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="/categories">Categories</a></li>
+        <li><a href="/tags">Tags</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <a href="#" data-activates="slide-out" class="button-collapse top-nav full hide-on-large-only">
+    <i class="material-icons">menu</i>
+  </a>
+</div>
+<ul id="slide-out" class="side-nav fixed">
+  <li>
+    <div class="userView thi-userView">
+      <div class="background"></div>
+        <a href="/">
+            <img style="display:inherit;" class="circle z-depth-2" src="/assets/res/me.jpg">
+        </a>
+      <span style="font-size: larger;" class="white-text name">Dan Fitz</span>
+      <span class="white-text email"><a style="color: #bdbdbd;" href="http://danielfitz.com">danielfitz.com</a></span>
+    </div>
+  </li>
+  <li style="padding: 10px;">
+    <form action="/search" method="get">
+      <input class="search-sidebar" type="search" name="q"  placeholder="Search something?" autofocus>
+      <input type="submit" value="Search" style="display: none;">
+    </form>
+  </li>
+  <div id="nav-bar">
+    <li><a class="waves-effect" href="/"><i class="material-icons">home</i>Home</a></li>
+    <li><a class="waves-effect" href="/categories"><i class="material-icons">sort</i>Categories</a></li>
+    <li><a class="waves-effect" href="/tags"><i class="material-icons">loyalty</i>Tags</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="waves-effect" href="/about"><i class="material-icons">info</i>About</a></li>
+    <li><a class="waves-effect" href="/contact"><i class="material-icons">perm_contact_calendar</i>Contact</a></li>
+  </div>
+</ul>
+
+  
+</header>
+<main>
+  <div class="container">
+    <div id="post-info">
+      <h3>freeCodeCamp - Responsive Web Design Certification Notes</h3>
+      <span>
+        Posted on
+        <span style="display: initial;" class="cat-class">07/11/2018</span>,
+        in
+        
+          
+          
+            <a class="cat-class cat-commas" href="/categories#frontend">Frontend</a>.
+          
+        
+      </span>
+    </div>
+
+    <div class="divider"></div>
+    <div class="row thi-post">
+      <div class="col s12">
+          <h1 id="freecodecamp---responsive-web-design-certification-notes">freeCodeCamp - Responsive Web Design Certification Notes</h1>
+
+<h2 id="introduction-to-html-and-html5">Introduction to HTML and HTML5</h2>
+
+<h3 id="html5-comes-with-new-elements-that-help-organize-content">HTML5 comes with new elements that help organize content</h3>
+<ul>
+  <li><code class="highlighter-rouge">header</code></li>
+  <li><code class="highlighter-rouge">footer</code></li>
+  <li><code class="highlighter-rouge">nav</code></li>
+  <li><code class="highlighter-rouge">article</code>
+    <ul>
+      <li>Used for standalone, independent content</li>
+      <li>Example: blog posts</li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">section</code>
+    <ul>
+      <li>Used for content that is thematically related</li>
+      <li>Example: book chapters</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="heres-the-basics-of-creating-an-html-form">Here’s the basics of creating an HTML form</h3>
+
+<ol>
+  <li><code class="highlighter-rouge">&lt;form action="action"&gt;&lt;/form&gt;</code> creates a form</li>
+  <li>Inside the form element, <code class="highlighter-rouge">&lt;input /&gt;</code> creates an input box
+    <ul>
+      <li>Add attribute <code class="highlighter-rouge">&lt;input type="type" /&gt;</code> to tell the browser what kind of input it is
+        <ul>
+          <li>Types include: radio, checkbox, etc.</li>
+        </ul>
+      </li>
+      <li>Add attribute <code class="highlighter-rouge">&lt;input placeholder="text" /&gt;</code> to add instructions inside input</li>
+      <li>Add attribute <code class="highlighter-rouge">&lt;input required /&gt;</code> to make input required</li>
+    </ul>
+  </li>
+  <li>Inside the form element, <code class="highlighter-rouge">&lt;button type="submit"&gt;Text&lt;/button&gt;</code>, when clicked, performs the form action</li>
+  <li>To create input type <code class="highlighter-rouge">radio</code> or <code class="highlighter-rouge">checkbox</code>, do the following:
+    <ul>
+      <li>Create <code class="highlighter-rouge">&lt;label for="option1"&gt;&lt;/label&gt;</code></li>
+      <li>Inside label element, add <code class="highlighter-rouge">&lt;input&gt;</code>
+        <ul>
+          <li>As a convention, add <code class="highlighter-rouge">id="option1"</code> so you know input it’s related to label</li>
+          <li>Add <code class="highlighter-rouge">name="radioGroupName"</code> so every radio button is connected (selecting one de-selects the other)</li>
+        </ul>
+      </li>
+      <li>Inside label element, add <code class="highlighter-rouge">optionName</code> so you know what the radio button is for</li>
+      <li>Repeat for each radio button</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="basic-css">Basic CSS</h2>
+
+<h3 id="how-to-backup-font-in-case-primary-font-fails">How to backup font in case primary font fails</h3>
+
+<p>When setting <code class="highlighter-rouge">font-family</code> property, you can provide a backup font by doing the following:
+<code class="highlighter-rouge">font-family: primaryFont, backupFont;</code></p>
+
+<h3 id="css-inheritance-and-priority">CSS inheritance and priority</h3>
+
+<ul>
+  <li><strong>Inheritance:</strong> When you style an element, by default every one of its child elements inherits those styles</li>
+  <li><strong>Priority:</strong> However, some selectors like class selectors or id selectors override styles because they’re higher up in priority</li>
+  <li>This is the order of priority when the browser reads CSS:
+    <ol>
+      <li>!important</li>
+      <li>Inline styles (HTML style attribute)</li>
+      <li>ID selectors</li>
+      <li>Classes selectors (and pseudo-selectors and attribute selectors)</li>
+      <li>Element selectors</li>
+      <li>Inheritance</li>
+    </ol>
+  </li>
+</ul>
+
+<p><em>Note: If you ever repeat the same selector level, the one that appears lower in the CSS file will be applied</em></p>
+
+<h3 id="heres-some-special-selectors">Here’s some special selectors</h3>
+
+<ul>
+  <li>Attribute selectors <code class="highlighter-rouge">[attribute="value"]</code></li>
+</ul>
+
+<h3 id="types-of-css-units">Types of CSS units</h3>
+
+<ul>
+  <li>Absolute units = tied to physical units of  length
+    <ul>
+      <li>px = pixels</li>
+    </ul>
+  </li>
+  <li>Relative units = tied to another length value
+    <ul>
+      <li>em = based on element’s font</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="all-the-ways-you-can-state-colours">All the ways you can state colours</h3>
+
+<ul>
+  <li>Hex code <code class="highlighter-rouge">#FFA500</code>
+    <ul>
+      <li>First 2 numbers represent red, second 2 green, last 2 blue</li>
+      <li>0 means complete absence of colour; F is maximum possible brightness</li>
+      <li>Example above: all red mixed with some green</li>
+    </ul>
+  </li>
+  <li>RGB values <code class="highlighter-rouge">rgb(255, 0, 100)</code>
+    <ul>
+      <li>First is red, second is green, third is blue</li>
+      <li>0 is complete absence of colour; 255 is max brightness</li>
+    </ul>
+  </li>
+  <li>Hue, saturation, lightness <code class="highlighter-rouge">hsl(360, 50%, 100%);</code>
+    <ul>
+      <li>Hue is a value from 0 to 360 and represent the colour wheel</li>
+      <li>Saturation is the amount of gray in the colour from 0% to 100%</li>
+      <li>Lightness is the amount of black and white in the colour from 0% to 100%</li>
+    </ul>
+  </li>
+  <li>Background gradients <code class="highlighter-rouge">background: linear-gradient(gradientDirection, color1, color2, ...);</code>
+    <ul>
+      <li>With a direction between <code class="highlighter-rouge">0deg</code> and <code class="highlighter-rouge">360deg</code>, you can create a gradient</li>
+      <li>*Bonus: <code class="highlighter-rouge">repeating-linear-gradient()</code> repeats the colours</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="using-css-variables-to-bulk-change-properties">Using CSS variables to bulk change properties</h3>
+
+<ol>
+  <li>Create a CSS variable in a parent element using the format <code class="highlighter-rouge">--variable: property;</code></li>
+  <li>To reference the variable, use the function <code class="highlighter-rouge">var(--variable)</code> to apply <code class="highlighter-rouge">property</code></li>
+  <li><code class="highlighter-rouge">var(--variable, fallbackValue)</code> allows you to include a <code class="highlighter-rouge">fallbackValue</code>  in case <code class="highlighter-rouge">--variable</code> doesn’t work due to compatibility issues</li>
+</ol>
+
+<p><em>Pro tip: use <code class="highlighter-rouge">:root</code> selector to apply CSS variable to the entire HTML document and all its child elements; this is the broadest selector</em></p>
+
+<h3 id="how-to-provide-fallbacks-in-case-css-doesnt-render">How to provide fallbacks in case CSS doesn’t render</h3>
+
+<ul>
+  <li>Before your intended <code class="highlighter-rouge">style: property;</code>, include a <code class="highlighter-rouge">fallbackStyle: fallbackProperty;</code> right above it</li>
+  <li>If the browser understands the intended style, it will override the fallback; otherwise, it will skip over it and use the fallback instead</li>
+</ul>
+
+<h2 id="applied-visual-design">Applied Visual Design</h2>
+
+<h3 id="some-useful-style-properties-that-add-visual-flair">Some useful style properties that add visual flair</h3>
+
+<ul>
+  <li><code class="highlighter-rouge">box-shadow: offset-x offset-y blur-radius spread-radius color;</code></li>
+  <li><code class="highlighter-rouge">line-height: value;</code></li>
+</ul>
+
+<h3 id="understanding-css-positioning-properties">Understanding CSS positioning properties</h3>
+
+<ul>
+  <li>CSS follows a <strong>box model</strong>, meaning all elements have an invisible box around them</li>
+  <li>By default, the next element/box always appears below the previous element/box</li>
+  <li>Here’s some properties that allow you to play with the positioning of the element:
+    <ul>
+      <li><code class="highlighter-rouge">position: relative;</code>
+        <ul>
+          <li>Combined with <code class="highlighter-rouge">top</code> or <code class="highlighter-rouge">bottom</code> or <code class="highlighter-rouge">left</code> or <code class="highlighter-rouge">right</code>, you can push an element away from its original position (without affecting the normal flow)</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">position: absolute;</code>
+        <ul>
+          <li>Cocks the element in place relative to its closest positioned parent container, i.e., container positioned as anything other than <code class="highlighter-rouge">static</code> (this takes it out of the normal flow, so other elements ignore it)</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">position: fixed;</code>
+        <ul>
+          <li>Works just like <code class="highlighter-rouge">absolute</code> but is positioned relative to the viewport, i.e., doesn’t move when the user scrolls</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">float: left;</code> and <code class="highlighter-rouge">float: right;</code>
+        <ul>
+          <li>Pushes the element to the left or right of the parent container (and removes it from the normal flow)</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">z-index: integer;</code>
+        <ul>
+          <li>When two elements overlap, the one with the higher z-index wins (by default, it’s always the later element in the HTML file)</li>
+          <li><code class="highlighter-rouge">margin: auto;</code> centers elements</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="functions-for-transforming-elements">Functions for transforming elements</h3>
+
+<ul>
+  <li><code class="highlighter-rouge">transform: scale(integer);</code>
+    <ul>
+      <li>Increases size of element by a multiplier</li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">transform: skewX(Xdeg);</code> and <code class="highlighter-rouge">transform: skewY(Xdeg);</code>
+    <ul>
+      <li>Distorts element along its X- or Y-axis</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="how-to-create-css-animations">How to create CSS animations</h3>
+
+<ol>
+  <li>Add <code class="highlighter-rouge">animation-name: animationName;</code> and <code class="highlighter-rouge">animation-duration: Xs;</code> to your animated element</li>
+  <li>Create <code class="highlighter-rouge">@keyframes animationName {0% {action} 33% {action} 100% {action}}</code> to tell browser how to animate the elements from start state to end state</li>
+  <li>Cool things you can do:
+    <ol>
+      <li><strong>Adding persistence:</strong> add <code class="highlighter-rouge">animation-fill-mode: forwards;</code> to your animated element</li>
+      <li><strong>Adding a loop:</strong> add <code class="highlighter-rouge">animation-iteration-count</code> to create a loop, ranging from <code class="highlighter-rouge">1</code> to <code class="highlighter-rouge">infinite</code></li>
+      <li><strong>Adding variable speed:</strong> add <code class="highlighter-rouge">animation-timing-function</code> with <code class="highlighter-rouge">ease</code>, <code class="highlighter-rouge">linear</code>, <code class="highlighter-rouge">ease-in</code>, <code class="highlighter-rouge">ease-out</code>, or <code class="highlighter-rouge">cubic-bezier()</code> as properties</li>
+      <li><strong>Creating movement:</strong> use <code class="highlighter-rouge">top</code> or <code class="highlighter-rouge">left</code> or <code class="highlighter-rouge">right</code> or <code class="highlighter-rouge">bottom</code> properties in <code class="highlighter-rouge">@keyframes</code></li>
+    </ol>
+  </li>
+</ol>
+
+<h2 id="applied-accessibility">Applied Accessibility</h2>
+
+<h3 id="best-practices-for-accessibility">Best practices for accessibility</h3>
+
+<ul>
+  <li>Add <code class="highlighter-rouge">alt="text"</code> attribute to <code class="highlighter-rouge">img</code> or <code class="highlighter-rouge">audio</code> HTML elements with content-rich images and audio</li>
+  <li>The use of different <code class="highlighter-rouge">h</code> HTML elements should be semantically meaningful, i.e., denote content breakdown</li>
+  <li>Use these new HTML elements to allow screen readers and browsers to know what content is what
+    <ul>
+      <li><code class="highlighter-rouge">header</code>, <code class="highlighter-rouge">footer</code>, <code class="highlighter-rouge">nav</code>, <code class="highlighter-rouge">main</code></li>
+      <li><code class="highlighter-rouge">article</code>
+        <ul>
+          <li>Used for standalone, independent content</li>
+          <li>Example: blog posts</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">section</code>
+        <ul>
+          <li>Used for content that is thematically related</li>
+          <li>Example: book chapters</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">&lt;figure&gt;&lt;img&gt;&lt;figcaption&gt;caption&lt;/figcaption&gt;&lt;/figure&gt;</code> is an HTML structure to semantically grouping images with captions</li>
+  <li>Add <code class="highlighter-rouge">&lt;label for="inputId"&gt;input title&lt;/label&gt;</code> around your form input title, so the browser knows it’s related to the <code class="highlighter-rouge">&lt;input id="inputId" type="text" /&gt;</code> element</li>
+  <li><code class="highlighter-rouge">&lt;fieldset&gt;</code> can be wrapped around multiple <code class="highlighter-rouge">&lt;input type="radio" /&gt;</code> elements to semantically connect radio buttons
+    <ul>
+      <li><code class="highlighter-rouge">&lt;legend&gt;description&lt;/legend&gt;</code> inside <code class="highlighter-rouge">&lt;fieldset&gt;</code> adds even more semantic content about the choices</li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">type="date"</code> attribute in <code class="highlighter-rouge">&lt;input&gt;</code> element adds ability to choose a date from a calendar</li>
+  <li><code class="highlighter-rouge">&lt;time datetime="2010-10-30"&gt;today&lt;/time&gt;</code> gives screen readers an objective measure of time to add more meaning</li>
+  <li>It’s best practice to use CSS to position alternative information out of a normal user’s viewport while keeping it accessible for screen readers</li>
+  <li>WCAG recommends a 4.5:1 contrast ratio for text to background colour (to maximize readability)</li>
+  <li>When linking text with <code class="highlighter-rouge">&lt;a&gt;</code> elements, make the wrapped text semantically meaningful, so screen readers know what the link is about</li>
+</ul>
+
+<h3 id="how-to-add-shortcut-keys-to-your-webpage">How to add shortcut keys to your webpage</h3>
+
+<ul>
+  <li>Add <code class="highlighter-rouge">accesskey="key"</code> to an element to create a shortcut key for quick access</li>
+  <li>Add <code class="highlighter-rouge">tabindex="integer"</code> to an element to make it focusable when a user tabs through a page
+    <ul>
+      <li>Tab starts with value <code class="highlighter-rouge">1</code> and then larger numbers and then goes to value <code class="highlighter-rouge">0</code> and default tab-able elements</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="responsive-web-design-principles">Responsive Web Design Principles</h2>
+
+<h3 id="how-to-make-your-page-responsive">How to make your page responsive</h3>
+<ul>
+  <li><strong>Add viewport conditionality:</strong> Use <code class="highlighter-rouge">@media (breakpoint: units) { CSS rules }</code> to tell the browser to only apply the following CSS rules <em>if</em> the viewport is within the breakpoint</li>
+  <li><strong>Make images responsive:</strong> <code class="highlighter-rouge">max-width: percentage;</code> property scales the image to fit its container until it reaches full size (and then stops)</li>
+  <li><strong>Make images retina-ready:</strong> Make images half their original size using <code class="highlighter-rouge">height</code> and <code class="highlighter-rouge">width</code> properties</li>
+  <li><strong>Responsive viewport units:</strong>
+    <ul>
+      <li><code class="highlighter-rouge">10vw</code>, <code class="highlighter-rouge">10vh</code>
+        <ul>
+          <li>10% of viewport’s width, 10% of viewport’s width</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">10vmin</code>, <code class="highlighter-rouge">10vmax</code>
+        <ul>
+          <li>10% of viewport’s smaller dimension (height vs. width), 10% of viewport’s larger dimension (height vs. width)</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="css-flexbox">CSS Flexbox</h2>
+
+<h3 id="essential-properties-to-set-up-flexbox-containers">Essential properties to set up flexbox containers</h3>
+
+<ol>
+  <li>Add <code class="highlighter-rouge">display: flex;</code> to a parent container to be able to manipulate its child elements</li>
+  <li>Add <code class="highlighter-rouge">flex-direction: direction;</code> to a parent container to decide the flow of its child elements
+    <ul>
+      <li><code class="highlighter-rouge">row</code>, <code class="highlighter-rouge">column</code>, <code class="highlighter-rouge">row-reverse</code>, or <code class="highlighter-rouge">column-reverse</code></li>
+    </ul>
+  </li>
+  <li>Add <code class="highlighter-rouge">justify-content: type;</code> to a parent container to align child elements along the parent container’s main axis (horizontal when <code class="highlighter-rouge">row</code> and vertical when <code class="highlighter-rouge">column</code>)
+    <ul>
+      <li><code class="highlighter-rouge">center</code> means center of container</li>
+      <li><code class="highlighter-rouge">flex-start</code> and <code class="highlighter-rouge">flex-end</code> means start of end of container</li>
+      <li><code class="highlighter-rouge">space-between</code> means first and last child element are at edges of container</li>
+      <li><code class="highlighter-rouge">space-around</code> means equal spatial distribution</li>
+    </ul>
+  </li>
+  <li>Add <code class="highlighter-rouge">align-items: type;</code>to a parent container to align child elements along the parent container’s cross axis (vertical when <code class="highlighter-rouge">row</code> and horizontal when <code class="highlighter-rouge">column</code>)
+    <ul>
+      <li><code class="highlighter-rouge">center</code></li>
+      <li><code class="highlighter-rouge">flex-start</code> and <code class="highlighter-rouge">flex-end</code></li>
+      <li><code class="highlighter-rouge">stretch</code> means fill parent container along cross axis</li>
+      <li><code class="highlighter-rouge">baseline</code> means size child elements to their text</li>
+    </ul>
+  </li>
+  <li>Add <code class="highlighter-rouge">flex-wrap: wrap;</code> to tell child elements to flow over to the next row (or column) when not all children can fit onto single row (or column)
+    <ul>
+      <li><code class="highlighter-rouge">wrap-reverse</code> goes the opposite direction</li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="properties-for-flexbox-child-elements">Properties for flexbox child elements</h3>
+
+<ul>
+  <li><code class="highlighter-rouge">flex-shrink: integer;</code> shrinks container to match width of parent container (amount shrunk depends on integer value of other child elements)</li>
+  <li><code class="highlighter-rouge">flex-grow: integer;</code> is the opposite of <code class="highlighter-rouge">flex-shrink</code></li>
+  <li><code class="highlighter-rouge">flex-basis: sizeProperty;</code> like <code class="highlighter-rouge">px</code> sets the initial size of child element before <code class="highlighter-rouge">flex-shrink</code> and <code class="highlighter-rouge">flex-grow</code> do their work</li>
+  <li><code class="highlighter-rouge">order: integer;</code> orders child elements in parent container by integer value (smaller numbers first)</li>
+  <li><code class="highlighter-rouge">align-self: type;</code> aligns the child element by itself along the cross axis like <code class="highlighter-rouge">align-items</code></li>
+</ul>
+
+<h2 id="css-grid">CSS Grid</h2>
+
+<h3 id="essential-properties-to-set-up-grid-containers">Essential properties to set up grid containers</h3>
+
+<ol>
+  <li>Add <code class="highlighter-rouge">display: grid;</code> to create grid container</li>
+  <li>Use these properties to add rows and columns:
+    <ul>
+      <li>Add <code class="highlighter-rouge">grid-template-rows: sizeProp sizeProp;</code> to add rows (each <code class="highlighter-rouge">sizeProp</code> creates a row and defines its height</li>
+      <li>Add <code class="highlighter-rouge">grid-template-columns: sizeProp sizeProp;</code> to add columns (each <code class="highlighter-rouge">sizeProp</code> creates a column and defines its width)
+        <ul>
+          <li><code class="highlighter-rouge">auto</code> sets to width/height of content</li>
+          <li><code class="highlighter-rouge">%</code> sets width/height to percentage of grid container</li>
+          <li><code class="highlighter-rouge">fr</code> sets width/height to fraction of what’s left (assuming other columns/rows use <code class="highlighter-rouge">fr</code>)</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Add these functions inside <code class="highlighter-rouge">grid-template-columns</code> or <code class="highlighter-rouge">grid-template-rows</code> for more tricks:
+    <ul>
+      <li><em>Function: Use <code class="highlighter-rouge">minmax(min, max)</code> for <code class="highlighter-rouge">sizeProp</code> to set a range of acceptable sizes for column or row</em></li>
+      <li><em>Function: Use <code class="highlighter-rouge">repeat(amount, sizeProp)</code> to repeat size property instead of manually inputting</em>
+        <ul>
+          <li>When <code class="highlighter-rouge">amount</code> is set to <code class="highlighter-rouge">auto-fill</code>, as you stretch container, grid items are responsively added if there’s enough space; otherwise, they’re pushed to the next column/row; when the container stretches beyond grid items, it keeps adding empty columns/rows</li>
+          <li>When <code class="highlighter-rouge">amount</code> is set to <code class="highlighter-rouge">auto-fit</code>, it’s the same thing as <code class="highlighter-rouge">auto-fill</code>, but it doesn’t add empty columns/rows when container stretches beyond grid items</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Use these properties to add row gaps and column gaps between grid items:
+    <ul>
+      <li><code class="highlighter-rouge">grid-column-gap: sizeProp;</code></li>
+      <li><code class="highlighter-rouge">grid-row-gap: sizeProp;</code></li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">justify-items: type;</code> aligns content of each grid item horizontally; <code class="highlighter-rouge">align-items: type;</code> aligns vertically
+    <ul>
+      <li><code class="highlighter-rouge">stretch</code> stretches content to width of grid item</li>
+      <li><code class="highlighter-rouge">start</code>, <code class="highlighter-rouge">center</code>, <code class="highlighter-rouge">end</code> are self-explanatory</li>
+    </ul>
+  </li>
+  <li>You can tell a child element where to go in the grid by doing the following:
+    <ul>
+      <li>Add <code class="highlighter-rouge">grid-template-areas: "header header" "content advert" "footer footer";</code> to parent container to define its areas—row by row</li>
+      <li>Add <code class="highlighter-rouge">grid-area: areaName;</code> to child element to tell it where to go</li>
+      <li>You can use <code class="highlighter-rouge">grid-area: horizontalStart/verticalStart/hStop/vStop;</code> when name isn’t created</li>
+    </ul>
+  </li>
+  <li>Add <code class="highlighter-rouge">display: grid;</code> in a grid item to create a grid within a grid</li>
+</ol>
+
+<h3 id="properties-for-grid-items-children">Properties for grid items (children)</h3>
+
+<ul>
+  <li><code class="highlighter-rouge">grid-column: start / stop;</code> and <code class="highlighter-rouge">grid-row: start / stop;</code> allow child elements to span more than one grid item
+    <ul>
+      <li><code class="highlighter-rouge">1</code> is the top left corner of the grid container</li>
+      <li>Higher numbers are the next edges between two grid items (for both columns and rows)</li>
+      <li><code class="highlighter-rouge">1 / 4;</code> means make child element span the first 3 grid items (columns or rows)</li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">justify-self: type;</code> aligns grid item’s content horizontally, and <code class="highlighter-rouge">align-self: type;</code> aligns vertically
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTcwMDc1NjU1MCwtMTY2OTMzOTc1MCwxNz
+k0OTI1MDU4LDgwMTkzMjU3NCwxMTI5OTcyMzQ2LDEyMjAzMjU2
+MzRdfQ==
+--></li>
+</ul>
+
+      </div>
+    </div>
+
+    <div class="tag-list">
+      
+      
+      
+      <a class="tag-chip" href="/tags#html"><div class="chip z-depth-1">html</div></a>
+      
+      
+      
+      <a class="tag-chip" href="/tags#css"><div class="chip z-depth-1">css</div></a>
+      
+    </div>
+    <style type="text/css">
+.related-posts{
+  border: 3px dotted #2e87e7;
+  border-radius: 5px;
+  margin: 20px 0;
+  padding: 10px 10px 0 10px;
+}
+.related-posts span{
+  font-size: 130%;
+  font-weight: 500;
+  color: #2e87e7;
+}
+.related-posts ul{
+  margin-top: 5px!important;
+}
+.thi-icon{
+  float: left;
+  line-height: inherit;
+  margin-right: 5px;
+  margin-left: 2px;
+  color: #2e87e7;
+}
+</style>
+
+<div class="related-posts">
+  <i class="material-icons thi-icon">grade</i><span>May you like?</span>
+  
+  <ul>
+    
+    
+      
+      
+        
+      
+        
+      
+    
+      
+      
+        
+      
+        
+      
+        
+      
+    
+
+    
+    
+      
+        
+
+        
+        
+          
+        
+          
+        
+        
+          
+          <li>
+            <a href="/shortcuts-for-editors">
+                Shortcuts for editors
+            </a>
+            <small>08 Oct 2018</small>
+          </li>
+        
+      
+        
+
+        
+        
+          
+        
+          
+        
+          
+        
+        
+          
+          <li>
+            <a href="/how-to-install-notetheme">
+                How to install NoteTheme
+            </a>
+            <small>17 Aug 2018</small>
+          </li>
+        
+      
+    
+  </ul>
+</div>
+    <form action="/search" method="get">
+	<input type="search" name="q"  placeholder="Type what you wanna search..." autofocus>
+	<input type="submit" value="Search" style="display: none;">
+</form>
+
+    
+  </div>
+</main>
+
+	<script src="/assets/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">
+  jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+      //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+      offset_opacity = 1200,
+      //duration of the top scrolling animation (in ms)
+      scroll_top_duration = 700,
+      //grab the "back to top" link
+      $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+      ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+      // if( $(this).scrollTop() > offset_opacity ) { 
+      //  $back_to_top.addClass('cd-fade-out');
+      // }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+      event.preventDefault();
+      $('body,html').animate({
+        scrollTop: 0 ,
+        }, scroll_top_duration
+      );
+    });
+
+  });
+</script>
+<style type="text/css">
+.cd-top {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: #bbb url(/images/cd-top-arrow.svg) no-repeat center 50%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+}
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
+.no-touch .cd-top:hover {
+  background-color: #e86256;
+  opacity: 1;
+}
+</style>
+
+<a href="#0" class="cd-top">Top</a>
+	<footer class="page-footer teal">
+  <div class="footer-copyright">
+    <div class="container text-white">
+     <a href="">Dan Fitz</a> &#xA9; 2019 Inherited from <a href="https://shawnteoh.github.io/matjek/">MatJeck</a>.
+    </div>
+  </div>
+</footer>
+
+<script src="//code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+
+
+  
+    <script src="/assets/js/post.js"></script>
+  
+
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})
+  (window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<script src="/assets/js/main.js"></script>
+</body>
+</html>

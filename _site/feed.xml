@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-02-04T01:16:41-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Dan Fitz</title><subtitle>A place for me to organize knowledge</subtitle><entry><title type="html">freeCodeCamp - Responsive Web Design Certification Notes</title><link href="http://localhost:4000/responsive-web-design-certification-notes" rel="alternate" type="text/html" title="freeCodeCamp - Responsive Web Design Certification Notes" /><published>2018-11-07T00:00:00-05:00</published><updated>2018-11-07T00:00:00-05:00</updated><id>http://localhost:4000/responsive-web-design-certification-notes</id><content type="html" xml:base="http://localhost:4000/responsive-web-design-certification-notes">&lt;h1 id=&quot;freecodecamp---responsive-web-design-certification-notes&quot;&gt;freeCodeCamp - Responsive Web Design Certification Notes&lt;/h1&gt;
+
+&lt;h2 id=&quot;introduction-to-html-and-html5&quot;&gt;Introduction to HTML and HTML5&lt;/h2&gt;
+
+&lt;h3 id=&quot;html5-comes-with-new-elements-that-help-organize-content&quot;&gt;HTML5 comes with new elements that help organize content&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;header&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;footer&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;nav&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;article&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Used for standalone, independent content&lt;/li&gt;
+      &lt;li&gt;Example: blog posts&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;section&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Used for content that is thematically related&lt;/li&gt;
+      &lt;li&gt;Example: book chapters&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;heres-the-basics-of-creating-an-html-form&quot;&gt;Here’s the basics of creating an HTML form&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;form action=&quot;action&quot;&amp;gt;&amp;lt;/form&amp;gt;&lt;/code&gt; creates a form&lt;/li&gt;
+  &lt;li&gt;Inside the form element, &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;input /&amp;gt;&lt;/code&gt; creates an input box
+    &lt;ul&gt;
+      &lt;li&gt;Add attribute &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;input type=&quot;type&quot; /&amp;gt;&lt;/code&gt; to tell the browser what kind of input it is
+        &lt;ul&gt;
+          &lt;li&gt;Types include: radio, checkbox, etc.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Add attribute &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;input placeholder=&quot;text&quot; /&amp;gt;&lt;/code&gt; to add instructions inside input&lt;/li&gt;
+      &lt;li&gt;Add attribute &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;input required /&amp;gt;&lt;/code&gt; to make input required&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Inside the form element, &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;button type=&quot;submit&quot;&amp;gt;Text&amp;lt;/button&amp;gt;&lt;/code&gt;, when clicked, performs the form action&lt;/li&gt;
+  &lt;li&gt;To create input type &lt;code class=&quot;highlighter-rouge&quot;&gt;radio&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;checkbox&lt;/code&gt;, do the following:
+    &lt;ul&gt;
+      &lt;li&gt;Create &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;label for=&quot;option1&quot;&amp;gt;&amp;lt;/label&amp;gt;&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;Inside label element, add &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;input&amp;gt;&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;As a convention, add &lt;code class=&quot;highlighter-rouge&quot;&gt;id=&quot;option1&quot;&lt;/code&gt; so you know input it’s related to label&lt;/li&gt;
+          &lt;li&gt;Add &lt;code class=&quot;highlighter-rouge&quot;&gt;name=&quot;radioGroupName&quot;&lt;/code&gt; so every radio button is connected (selecting one de-selects the other)&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Inside label element, add &lt;code class=&quot;highlighter-rouge&quot;&gt;optionName&lt;/code&gt; so you know what the radio button is for&lt;/li&gt;
+      &lt;li&gt;Repeat for each radio button&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;basic-css&quot;&gt;Basic CSS&lt;/h2&gt;
+
+&lt;h3 id=&quot;how-to-backup-font-in-case-primary-font-fails&quot;&gt;How to backup font in case primary font fails&lt;/h3&gt;
+
+&lt;p&gt;When setting &lt;code class=&quot;highlighter-rouge&quot;&gt;font-family&lt;/code&gt; property, you can provide a backup font by doing the following:
+&lt;code class=&quot;highlighter-rouge&quot;&gt;font-family: primaryFont, backupFont;&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;css-inheritance-and-priority&quot;&gt;CSS inheritance and priority&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Inheritance:&lt;/strong&gt; When you style an element, by default every one of its child elements inherits those styles&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Priority:&lt;/strong&gt; However, some selectors like class selectors or id selectors override styles because they’re higher up in priority&lt;/li&gt;
+  &lt;li&gt;This is the order of priority when the browser reads CSS:
+    &lt;ol&gt;
+      &lt;li&gt;!important&lt;/li&gt;
+      &lt;li&gt;Inline styles (HTML style attribute)&lt;/li&gt;
+      &lt;li&gt;ID selectors&lt;/li&gt;
+      &lt;li&gt;Classes selectors (and pseudo-selectors and attribute selectors)&lt;/li&gt;
+      &lt;li&gt;Element selectors&lt;/li&gt;
+      &lt;li&gt;Inheritance&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;Note: If you ever repeat the same selector level, the one that appears lower in the CSS file will be applied&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;heres-some-special-selectors&quot;&gt;Here’s some special selectors&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Attribute selectors &lt;code class=&quot;highlighter-rouge&quot;&gt;[attribute=&quot;value&quot;]&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;types-of-css-units&quot;&gt;Types of CSS units&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Absolute units = tied to physical units of  length
+    &lt;ul&gt;
+      &lt;li&gt;px = pixels&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Relative units = tied to another length value
+    &lt;ul&gt;
+      &lt;li&gt;em = based on element’s font&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;all-the-ways-you-can-state-colours&quot;&gt;All the ways you can state colours&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Hex code &lt;code class=&quot;highlighter-rouge&quot;&gt;#FFA500&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;First 2 numbers represent red, second 2 green, last 2 blue&lt;/li&gt;
+      &lt;li&gt;0 means complete absence of colour; F is maximum possible brightness&lt;/li&gt;
+      &lt;li&gt;Example above: all red mixed with some green&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;RGB values &lt;code class=&quot;highlighter-rouge&quot;&gt;rgb(255, 0, 100)&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;First is red, second is green, third is blue&lt;/li&gt;
+      &lt;li&gt;0 is complete absence of colour; 255 is max brightness&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Hue, saturation, lightness &lt;code class=&quot;highlighter-rouge&quot;&gt;hsl(360, 50%, 100%);&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Hue is a value from 0 to 360 and represent the colour wheel&lt;/li&gt;
+      &lt;li&gt;Saturation is the amount of gray in the colour from 0% to 100%&lt;/li&gt;
+      &lt;li&gt;Lightness is the amount of black and white in the colour from 0% to 100%&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Background gradients &lt;code class=&quot;highlighter-rouge&quot;&gt;background: linear-gradient(gradientDirection, color1, color2, ...);&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;With a direction between &lt;code class=&quot;highlighter-rouge&quot;&gt;0deg&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;360deg&lt;/code&gt;, you can create a gradient&lt;/li&gt;
+      &lt;li&gt;*Bonus: &lt;code class=&quot;highlighter-rouge&quot;&gt;repeating-linear-gradient()&lt;/code&gt; repeats the colours&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;using-css-variables-to-bulk-change-properties&quot;&gt;Using CSS variables to bulk change properties&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Create a CSS variable in a parent element using the format &lt;code class=&quot;highlighter-rouge&quot;&gt;--variable: property;&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;To reference the variable, use the function &lt;code class=&quot;highlighter-rouge&quot;&gt;var(--variable)&lt;/code&gt; to apply &lt;code class=&quot;highlighter-rouge&quot;&gt;property&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;var(--variable, fallbackValue)&lt;/code&gt; allows you to include a &lt;code class=&quot;highlighter-rouge&quot;&gt;fallbackValue&lt;/code&gt;  in case &lt;code class=&quot;highlighter-rouge&quot;&gt;--variable&lt;/code&gt; doesn’t work due to compatibility issues&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;em&gt;Pro tip: use &lt;code class=&quot;highlighter-rouge&quot;&gt;:root&lt;/code&gt; selector to apply CSS variable to the entire HTML document and all its child elements; this is the broadest selector&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;how-to-provide-fallbacks-in-case-css-doesnt-render&quot;&gt;How to provide fallbacks in case CSS doesn’t render&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Before your intended &lt;code class=&quot;highlighter-rouge&quot;&gt;style: property;&lt;/code&gt;, include a &lt;code class=&quot;highlighter-rouge&quot;&gt;fallbackStyle: fallbackProperty;&lt;/code&gt; right above it&lt;/li&gt;
+  &lt;li&gt;If the browser understands the intended style, it will override the fallback; otherwise, it will skip over it and use the fallback instead&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;applied-visual-design&quot;&gt;Applied Visual Design&lt;/h2&gt;
+
+&lt;h3 id=&quot;some-useful-style-properties-that-add-visual-flair&quot;&gt;Some useful style properties that add visual flair&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;box-shadow: offset-x offset-y blur-radius spread-radius color;&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;line-height: value;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;understanding-css-positioning-properties&quot;&gt;Understanding CSS positioning properties&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;CSS follows a &lt;strong&gt;box model&lt;/strong&gt;, meaning all elements have an invisible box around them&lt;/li&gt;
+  &lt;li&gt;By default, the next element/box always appears below the previous element/box&lt;/li&gt;
+  &lt;li&gt;Here’s some properties that allow you to play with the positioning of the element:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;position: relative;&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;Combined with &lt;code class=&quot;highlighter-rouge&quot;&gt;top&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;bottom&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;left&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;right&lt;/code&gt;, you can push an element away from its original position (without affecting the normal flow)&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;position: absolute;&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;Cocks the element in place relative to its closest positioned parent container, i.e., container positioned as anything other than &lt;code class=&quot;highlighter-rouge&quot;&gt;static&lt;/code&gt; (this takes it out of the normal flow, so other elements ignore it)&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;position: fixed;&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;Works just like &lt;code class=&quot;highlighter-rouge&quot;&gt;absolute&lt;/code&gt; but is positioned relative to the viewport, i.e., doesn’t move when the user scrolls&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;float: left;&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;float: right;&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;Pushes the element to the left or right of the parent container (and removes it from the normal flow)&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;z-index: integer;&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;When two elements overlap, the one with the higher z-index wins (by default, it’s always the later element in the HTML file)&lt;/li&gt;
+          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;margin: auto;&lt;/code&gt; centers elements&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;functions-for-transforming-elements&quot;&gt;Functions for transforming elements&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;transform: scale(integer);&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Increases size of element by a multiplier&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;transform: skewX(Xdeg);&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;transform: skewY(Xdeg);&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Distorts element along its X- or Y-axis&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;how-to-create-css-animations&quot;&gt;How to create CSS animations&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Add &lt;code class=&quot;highlighter-rouge&quot;&gt;animation-name: animationName;&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;animation-duration: Xs;&lt;/code&gt; to your animated element&lt;/li&gt;
+  &lt;li&gt;Create &lt;code class=&quot;highlighter-rouge&quot;&gt;@keyframes animationName {0% {action} 33% {action} 100% {action}}&lt;/code&gt; to tell browser how to animate the elements from start state to end state&lt;/li&gt;
+  &lt;li&gt;Cool things you can do:
+    &lt;ol&gt;
+      &lt;li&gt;&lt;strong&gt;Adding persistence:&lt;/strong&gt; add &lt;code class=&quot;highlighter-rouge&quot;&gt;animation-fill-mode: forwards;&lt;/code&gt; to your animated element&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Adding a loop:&lt;/strong&gt; add &lt;code class=&quot;highlighter-rouge&quot;&gt;animation-iteration-count&lt;/code&gt; to create a loop, ranging from &lt;code class=&quot;highlighter-rouge&quot;&gt;1&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;infinite&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Adding variable speed:&lt;/strong&gt; add &lt;code class=&quot;highlighter-rouge&quot;&gt;animation-timing-function&lt;/code&gt; with &lt;code class=&quot;highlighter-rouge&quot;&gt;ease&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;linear&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;ease-in&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;ease-out&lt;/code&gt;, or &lt;code class=&quot;highlighter-rouge&quot;&gt;cubic-bezier()&lt;/code&gt; as properties&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Creating movement:&lt;/strong&gt; use &lt;code class=&quot;highlighter-rouge&quot;&gt;top&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;left&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;right&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;bottom&lt;/code&gt; properties in &lt;code class=&quot;highlighter-rouge&quot;&gt;@keyframes&lt;/code&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;applied-accessibility&quot;&gt;Applied Accessibility&lt;/h2&gt;
+
+&lt;h3 id=&quot;best-practices-for-accessibility&quot;&gt;Best practices for accessibility&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Add &lt;code class=&quot;highlighter-rouge&quot;&gt;alt=&quot;text&quot;&lt;/code&gt; attribute to &lt;code class=&quot;highlighter-rouge&quot;&gt;img&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;audio&lt;/code&gt; HTML elements with content-rich images and audio&lt;/li&gt;
+  &lt;li&gt;The use of different &lt;code class=&quot;highlighter-rouge&quot;&gt;h&lt;/code&gt; HTML elements should be semantically meaningful, i.e., denote content breakdown&lt;/li&gt;
+  &lt;li&gt;Use these new HTML elements to allow screen readers and browsers to know what content is what
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;header&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;footer&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;nav&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;main&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;article&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;Used for standalone, independent content&lt;/li&gt;
+          &lt;li&gt;Example: blog posts&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;section&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;Used for content that is thematically related&lt;/li&gt;
+          &lt;li&gt;Example: book chapters&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;figure&amp;gt;&amp;lt;img&amp;gt;&amp;lt;figcaption&amp;gt;caption&amp;lt;/figcaption&amp;gt;&amp;lt;/figure&amp;gt;&lt;/code&gt; is an HTML structure to semantically grouping images with captions&lt;/li&gt;
+  &lt;li&gt;Add &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;label for=&quot;inputId&quot;&amp;gt;input title&amp;lt;/label&amp;gt;&lt;/code&gt; around your form input title, so the browser knows it’s related to the &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;input id=&quot;inputId&quot; type=&quot;text&quot; /&amp;gt;&lt;/code&gt; element&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;fieldset&amp;gt;&lt;/code&gt; can be wrapped around multiple &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;input type=&quot;radio&quot; /&amp;gt;&lt;/code&gt; elements to semantically connect radio buttons
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;legend&amp;gt;description&amp;lt;/legend&amp;gt;&lt;/code&gt; inside &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;fieldset&amp;gt;&lt;/code&gt; adds even more semantic content about the choices&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;type=&quot;date&quot;&lt;/code&gt; attribute in &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;input&amp;gt;&lt;/code&gt; element adds ability to choose a date from a calendar&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;time datetime=&quot;2010-10-30&quot;&amp;gt;today&amp;lt;/time&amp;gt;&lt;/code&gt; gives screen readers an objective measure of time to add more meaning&lt;/li&gt;
+  &lt;li&gt;It’s best practice to use CSS to position alternative information out of a normal user’s viewport while keeping it accessible for screen readers&lt;/li&gt;
+  &lt;li&gt;WCAG recommends a 4.5:1 contrast ratio for text to background colour (to maximize readability)&lt;/li&gt;
+  &lt;li&gt;When linking text with &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;a&amp;gt;&lt;/code&gt; elements, make the wrapped text semantically meaningful, so screen readers know what the link is about&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;how-to-add-shortcut-keys-to-your-webpage&quot;&gt;How to add shortcut keys to your webpage&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Add &lt;code class=&quot;highlighter-rouge&quot;&gt;accesskey=&quot;key&quot;&lt;/code&gt; to an element to create a shortcut key for quick access&lt;/li&gt;
+  &lt;li&gt;Add &lt;code class=&quot;highlighter-rouge&quot;&gt;tabindex=&quot;integer&quot;&lt;/code&gt; to an element to make it focusable when a user tabs through a page
+    &lt;ul&gt;
+      &lt;li&gt;Tab starts with value &lt;code class=&quot;highlighter-rouge&quot;&gt;1&lt;/code&gt; and then larger numbers and then goes to value &lt;code class=&quot;highlighter-rouge&quot;&gt;0&lt;/code&gt; and default tab-able elements&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;responsive-web-design-principles&quot;&gt;Responsive Web Design Principles&lt;/h2&gt;
+
+&lt;h3 id=&quot;how-to-make-your-page-responsive&quot;&gt;How to make your page responsive&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Add viewport conditionality:&lt;/strong&gt; Use &lt;code class=&quot;highlighter-rouge&quot;&gt;@media (breakpoint: units) { CSS rules }&lt;/code&gt; to tell the browser to only apply the following CSS rules &lt;em&gt;if&lt;/em&gt; the viewport is within the breakpoint&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Make images responsive:&lt;/strong&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;max-width: percentage;&lt;/code&gt; property scales the image to fit its container until it reaches full size (and then stops)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Make images retina-ready:&lt;/strong&gt; Make images half their original size using &lt;code class=&quot;highlighter-rouge&quot;&gt;height&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;width&lt;/code&gt; properties&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Responsive viewport units:&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;10vw&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;10vh&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;10% of viewport’s width, 10% of viewport’s width&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;10vmin&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;10vmax&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;10% of viewport’s smaller dimension (height vs. width), 10% of viewport’s larger dimension (height vs. width)&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;css-flexbox&quot;&gt;CSS Flexbox&lt;/h2&gt;
+
+&lt;h3 id=&quot;essential-properties-to-set-up-flexbox-containers&quot;&gt;Essential properties to set up flexbox containers&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Add &lt;code class=&quot;highlighter-rouge&quot;&gt;display: flex;&lt;/code&gt; to a parent container to be able to manipulate its child elements&lt;/li&gt;
+  &lt;li&gt;Add &lt;code class=&quot;highlighter-rouge&quot;&gt;flex-direction: direction;&lt;/code&gt; to a parent container to decide the flow of its child elements
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;row&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;column&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;row-reverse&lt;/code&gt;, or &lt;code class=&quot;highlighter-rouge&quot;&gt;column-reverse&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Add &lt;code class=&quot;highlighter-rouge&quot;&gt;justify-content: type;&lt;/code&gt; to a parent container to align child elements along the parent container’s main axis (horizontal when &lt;code class=&quot;highlighter-rouge&quot;&gt;row&lt;/code&gt; and vertical when &lt;code class=&quot;highlighter-rouge&quot;&gt;column&lt;/code&gt;)
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;center&lt;/code&gt; means center of container&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;flex-start&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;flex-end&lt;/code&gt; means start of end of container&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;space-between&lt;/code&gt; means first and last child element are at edges of container&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;space-around&lt;/code&gt; means equal spatial distribution&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Add &lt;code class=&quot;highlighter-rouge&quot;&gt;align-items: type;&lt;/code&gt;to a parent container to align child elements along the parent container’s cross axis (vertical when &lt;code class=&quot;highlighter-rouge&quot;&gt;row&lt;/code&gt; and horizontal when &lt;code class=&quot;highlighter-rouge&quot;&gt;column&lt;/code&gt;)
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;center&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;flex-start&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;flex-end&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;stretch&lt;/code&gt; means fill parent container along cross axis&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;baseline&lt;/code&gt; means size child elements to their text&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Add &lt;code class=&quot;highlighter-rouge&quot;&gt;flex-wrap: wrap;&lt;/code&gt; to tell child elements to flow over to the next row (or column) when not all children can fit onto single row (or column)
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;wrap-reverse&lt;/code&gt; goes the opposite direction&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;properties-for-flexbox-child-elements&quot;&gt;Properties for flexbox child elements&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;flex-shrink: integer;&lt;/code&gt; shrinks container to match width of parent container (amount shrunk depends on integer value of other child elements)&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;flex-grow: integer;&lt;/code&gt; is the opposite of &lt;code class=&quot;highlighter-rouge&quot;&gt;flex-shrink&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;flex-basis: sizeProperty;&lt;/code&gt; like &lt;code class=&quot;highlighter-rouge&quot;&gt;px&lt;/code&gt; sets the initial size of child element before &lt;code class=&quot;highlighter-rouge&quot;&gt;flex-shrink&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;flex-grow&lt;/code&gt; do their work&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;order: integer;&lt;/code&gt; orders child elements in parent container by integer value (smaller numbers first)&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;align-self: type;&lt;/code&gt; aligns the child element by itself along the cross axis like &lt;code class=&quot;highlighter-rouge&quot;&gt;align-items&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;css-grid&quot;&gt;CSS Grid&lt;/h2&gt;
+
+&lt;h3 id=&quot;essential-properties-to-set-up-grid-containers&quot;&gt;Essential properties to set up grid containers&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Add &lt;code class=&quot;highlighter-rouge&quot;&gt;display: grid;&lt;/code&gt; to create grid container&lt;/li&gt;
+  &lt;li&gt;Use these properties to add rows and columns:
+    &lt;ul&gt;
+      &lt;li&gt;Add &lt;code class=&quot;highlighter-rouge&quot;&gt;grid-template-rows: sizeProp sizeProp;&lt;/code&gt; to add rows (each &lt;code class=&quot;highlighter-rouge&quot;&gt;sizeProp&lt;/code&gt; creates a row and defines its height&lt;/li&gt;
+      &lt;li&gt;Add &lt;code class=&quot;highlighter-rouge&quot;&gt;grid-template-columns: sizeProp sizeProp;&lt;/code&gt; to add columns (each &lt;code class=&quot;highlighter-rouge&quot;&gt;sizeProp&lt;/code&gt; creates a column and defines its width)
+        &lt;ul&gt;
+          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;auto&lt;/code&gt; sets to width/height of content&lt;/li&gt;
+          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;%&lt;/code&gt; sets width/height to percentage of grid container&lt;/li&gt;
+          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;fr&lt;/code&gt; sets width/height to fraction of what’s left (assuming other columns/rows use &lt;code class=&quot;highlighter-rouge&quot;&gt;fr&lt;/code&gt;)&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Add these functions inside &lt;code class=&quot;highlighter-rouge&quot;&gt;grid-template-columns&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;grid-template-rows&lt;/code&gt; for more tricks:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;em&gt;Function: Use &lt;code class=&quot;highlighter-rouge&quot;&gt;minmax(min, max)&lt;/code&gt; for &lt;code class=&quot;highlighter-rouge&quot;&gt;sizeProp&lt;/code&gt; to set a range of acceptable sizes for column or row&lt;/em&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;em&gt;Function: Use &lt;code class=&quot;highlighter-rouge&quot;&gt;repeat(amount, sizeProp)&lt;/code&gt; to repeat size property instead of manually inputting&lt;/em&gt;
+        &lt;ul&gt;
+          &lt;li&gt;When &lt;code class=&quot;highlighter-rouge&quot;&gt;amount&lt;/code&gt; is set to &lt;code class=&quot;highlighter-rouge&quot;&gt;auto-fill&lt;/code&gt;, as you stretch container, grid items are responsively added if there’s enough space; otherwise, they’re pushed to the next column/row; when the container stretches beyond grid items, it keeps adding empty columns/rows&lt;/li&gt;
+          &lt;li&gt;When &lt;code class=&quot;highlighter-rouge&quot;&gt;amount&lt;/code&gt; is set to &lt;code class=&quot;highlighter-rouge&quot;&gt;auto-fit&lt;/code&gt;, it’s the same thing as &lt;code class=&quot;highlighter-rouge&quot;&gt;auto-fill&lt;/code&gt;, but it doesn’t add empty columns/rows when container stretches beyond grid items&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Use these properties to add row gaps and column gaps between grid items:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;grid-column-gap: sizeProp;&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;grid-row-gap: sizeProp;&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;justify-items: type;&lt;/code&gt; aligns content of each grid item horizontally; &lt;code class=&quot;highlighter-rouge&quot;&gt;align-items: type;&lt;/code&gt; aligns vertically
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;stretch&lt;/code&gt; stretches content to width of grid item&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;start&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;center&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;end&lt;/code&gt; are self-explanatory&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;You can tell a child element where to go in the grid by doing the following:
+    &lt;ul&gt;
+      &lt;li&gt;Add &lt;code class=&quot;highlighter-rouge&quot;&gt;grid-template-areas: &quot;header header&quot; &quot;content advert&quot; &quot;footer footer&quot;;&lt;/code&gt; to parent container to define its areas—row by row&lt;/li&gt;
+      &lt;li&gt;Add &lt;code class=&quot;highlighter-rouge&quot;&gt;grid-area: areaName;&lt;/code&gt; to child element to tell it where to go&lt;/li&gt;
+      &lt;li&gt;You can use &lt;code class=&quot;highlighter-rouge&quot;&gt;grid-area: horizontalStart/verticalStart/hStop/vStop;&lt;/code&gt; when name isn’t created&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Add &lt;code class=&quot;highlighter-rouge&quot;&gt;display: grid;&lt;/code&gt; in a grid item to create a grid within a grid&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;properties-for-grid-items-children&quot;&gt;Properties for grid items (children)&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;grid-column: start / stop;&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;grid-row: start / stop;&lt;/code&gt; allow child elements to span more than one grid item
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;1&lt;/code&gt; is the top left corner of the grid container&lt;/li&gt;
+      &lt;li&gt;Higher numbers are the next edges between two grid items (for both columns and rows)&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;1 / 4;&lt;/code&gt; means make child element span the first 3 grid items (columns or rows)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;justify-self: type;&lt;/code&gt; aligns grid item’s content horizontally, and &lt;code class=&quot;highlighter-rouge&quot;&gt;align-self: type;&lt;/code&gt; aligns vertically
+&lt;!--stackedit_data:
+eyJoaXN0b3J5IjpbMTcwMDc1NjU1MCwtMTY2OTMzOTc1MCwxNz
+k0OTI1MDU4LDgwMTkzMjU3NCwxMTI5OTcyMzQ2LDEyMjAzMjU2
+MzRdfQ==
+--&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="html" /><category term="css" /><summary type="html">freeCodeCamp - Responsive Web Design Certification Notes</summary></entry><entry><title type="html">Shortcuts for editors</title><link href="http://localhost:4000/shortcuts-for-editors" rel="alternate" type="text/html" title="Shortcuts for editors" /><published>2018-10-08T00:00:00-04:00</published><updated>2018-10-08T00:00:00-04:00</updated><id>http://localhost:4000/shortcuts-for-editors</id><content type="html" xml:base="http://localhost:4000/shortcuts-for-editors">&lt;p&gt;This post is only for editors, please read other posts.&lt;/p&gt;
+
+&lt;div id=&quot;toc&quot;&gt;
+  &lt;div class=&quot;toc-title&quot;&gt;
+    &lt;i class=&quot;material-icons mat-icon&quot;&gt;toc&lt;/i&gt;&lt;span&gt;In this post&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div id=&quot;full&quot;&gt;
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#front-matter&quot; id=&quot;markdown-toc-front-matter&quot;&gt;Front Matter&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#texts&quot; id=&quot;markdown-toc-texts&quot;&gt;Texts&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#codes&quot; id=&quot;markdown-toc-codes&quot;&gt;Codes&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#insert-liquid-code&quot; id=&quot;markdown-toc-insert-liquid-code&quot;&gt;Insert liquid code&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#figures--tables--videos&quot; id=&quot;markdown-toc-figures--tables--videos&quot;&gt;Figures / Tables / Videos&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#boxes&quot; id=&quot;markdown-toc-boxes&quot;&gt;Boxes&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#hideshow&quot; id=&quot;markdown-toc-hideshow&quot;&gt;Hide/Show&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#notifications&quot; id=&quot;markdown-toc-notifications&quot;&gt;Notifications&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#pull-quotes&quot; id=&quot;markdown-toc-pull-quotes&quot;&gt;Pull quotes&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#summarization-box&quot; id=&quot;markdown-toc-summarization-box&quot;&gt;Summarization box&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#theorem-style&quot; id=&quot;markdown-toc-theorem-style&quot;&gt;Theorem style&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#important-boxes&quot; id=&quot;markdown-toc-important-boxes&quot;&gt;Important boxes&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#others&quot; id=&quot;markdown-toc-others&quot;&gt;Others&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#add-toc&quot; id=&quot;markdown-toc-add-toc&quot;&gt;Add toc&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#columns-for-lists&quot; id=&quot;markdown-toc-columns-for-lists&quot;&gt;Columns for lists&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#side-by-side&quot; id=&quot;markdown-toc-side-by-side&quot;&gt;Side by side&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#links&quot; id=&quot;markdown-toc-links&quot;&gt;Links&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#steps&quot; id=&quot;markdown-toc-steps&quot;&gt;Steps&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;front-matter&quot;&gt;Front Matter&lt;/h2&gt;
+
+&lt;p&gt;There are some already-defined components on NoteTheme that you could use (If you don’t want to use something, &lt;strong&gt;remember to REMOVE it&lt;/strong&gt;)&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;maths: 1&lt;/code&gt; add this if you wanna use mathematical expression in the post.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;toc: 1&lt;/code&gt; if you wanna display table of contents on the left sidebar&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;comment: 1&lt;/code&gt; if you wanna use disqus comment system for this post&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;datacamp: 1&lt;/code&gt; if you wanna use datacamp light&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;categories: [notetheme,jekyll]&lt;/code&gt; add category you want&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;tags: [notetheme,jekyll,code]&lt;/code&gt; add tag you want&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;date: 2018-08-21&lt;/code&gt; if you update the post, write the updated date&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;snippet: 1&lt;/code&gt; if you want to pin this post to the Snippets section.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;bigimg&lt;/code&gt;: background photo of the post (showing on shared post on facebook)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;texts&quot;&gt;Texts&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;New&lt;/strong&gt; badge: &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;new /&amp;gt;&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Update&lt;/strong&gt; bagge: &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;update /&amp;gt;&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Keyboard&lt;/strong&gt;: &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;kbd&amp;gt;Ctrl&amp;lt;/kbd&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;codes&quot;&gt;Codes&lt;/h2&gt;
+
+&lt;h3 id=&quot;insert-liquid-code&quot;&gt;Insert liquid code&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;If you wanna add tag &lt;code class=&quot;highlighter-rouge&quot;&gt;{% this %}&lt;/code&gt;, use &lt;code class=&quot;highlighter-rouge&quot;&gt;{{&quot;{% this &quot;}}%}&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;If you like this &lt;code class=&quot;highlighter-rouge&quot;&gt;{{ this }}&lt;/code&gt;, use &lt;code class=&quot;highlighter-rouge&quot;&gt;{{&quot;{{ this &quot;}}}}&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;The rule&lt;/strong&gt;: use &lt;code class=&quot;highlighter-rouge&quot;&gt;{{&quot;&lt;/code&gt; before the key-word and end with &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;}}&lt;/code&gt; before the end of key-word.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;An easier way&lt;/strong&gt;: use &lt;code class=&quot;highlighter-rouge&quot;&gt;{% raw %}&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;{% endraw %}&lt;/code&gt; around the key-word. These two commands are also used for a block of codes,&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~~~ {% raw %}{% for %}
+// line of codes
+{% end for %}{% endraw %} ~~~
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;&lt;strong&gt;Tips&lt;/strong&gt;: For a beautiful display, put &lt;code class=&quot;highlighter-rouge&quot;&gt;{% raw %}&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;{% endraw %}&lt;/code&gt; exactly like the above code.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;figures--tables--videos&quot;&gt;Figures / Tables / Videos&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Normal way&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/link/to/figure/){:.w-500 .no-border}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Inline figures&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{% include img-inline.html content=&quot;/link/to/figure/&quot; %}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Youtube video&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{% include youtube.html content=&quot;wIsK4kQTrIg&quot; size=&quot;5&quot; %}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;boxes&quot;&gt;Boxes&lt;/h2&gt;
+
+&lt;h3 id=&quot;hideshow&quot;&gt;Hide/Show&lt;/h3&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;collapsible&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-collapsible=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;accordion&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;collapsible-header&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;markdown=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;i&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;material-icons&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;face&lt;span class=&quot;nt&quot;&gt;&amp;lt;/i&amp;gt;&lt;/span&gt;
+Title
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;collapsible-body&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;markdown=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+Content
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;notifications&quot;&gt;Notifications&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Info&lt;/p&gt;
+
+    &lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;markdown=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;thi-tip&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;i&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;material-icons mat-icon&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;info&lt;span class=&quot;nt&quot;&gt;&amp;lt;/i&amp;gt;&lt;/span&gt;
+content
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Error&lt;/p&gt;
+
+    &lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;markdown=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;thi-warning&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;i&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;material-icons mat-icon&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;error&lt;span class=&quot;nt&quot;&gt;&amp;lt;/i&amp;gt;&lt;/span&gt;
+content
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;pull-quotes&quot;&gt;Pull quotes&lt;/h3&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;post-more-info&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;markdown=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+The content of extra info of the post.
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;summarization-box&quot;&gt;Summarization box&lt;/h3&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;fieldset&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;field-set&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;markdown=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;legend&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;leg-title&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Title&lt;span class=&quot;nt&quot;&gt;&amp;lt;/legend&amp;gt;&lt;/span&gt;
+Content
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/fieldset&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;theorem-style&quot;&gt;Theorem style&lt;/h3&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;thi-box&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;markdown=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;box-title&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;markdown=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+**Title**
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;box-content&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;markdown=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+Content
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;important-boxes&quot;&gt;Important boxes&lt;/h3&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;p-mark&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;markdown=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+Content
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;others&quot;&gt;Others&lt;/h2&gt;
+
+&lt;h3 id=&quot;add-toc&quot;&gt;Add toc&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{% include toc.html %}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;columns-for-lists&quot;&gt;Columns for lists&lt;/h3&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;thi-columns&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;markdown=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+- item 1
+- item 2
+- item 3
+- item 4
+- item 5
+- item 6
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;side-by-side&quot;&gt;Side by side&lt;/h3&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;row d-flex&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;markdown=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;col s12 l6&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;markdown=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+This is the code
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;col s12 l6&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;markdown=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+This is the result
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;links&quot;&gt;Links&lt;/h3&gt;
+
+&lt;p&gt;See again&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;see-again&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;i&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;material-icons&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;settings_backup_restore&lt;span class=&quot;nt&quot;&gt;&amp;lt;/i&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;markdown=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+Content
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Read-more link&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{% include more.html content=&quot;[Welcome to Math2IT](http://math2it.com).&quot; %}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Download&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{% include download.html content=&quot;[Download text](download link).&quot; %}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;steps&quot;&gt;Steps&lt;/h3&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt;  &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;thi-step&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;step&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;step-number&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;step-content&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;markdown=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+Content in step 1.
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;step&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;step-number&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;step-content&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;markdown=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+Content in step 2
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="jekyll" /><category term="python" /><summary type="html">This post is only for editors, please read other posts.</summary></entry><entry><title type="html">How to install NoteTheme</title><link href="http://localhost:4000/how-to-install-notetheme" rel="alternate" type="text/html" title="How to install NoteTheme" /><published>2018-08-17T00:00:00-04:00</published><updated>2018-08-17T00:00:00-04:00</updated><id>http://localhost:4000/how-to-install-notetheme</id><content type="html" xml:base="http://localhost:4000/how-to-install-notetheme">&lt;p&gt;In this tutorial, I suppose that you are new to &lt;a href=&quot;https://pages.github.com/&quot;&gt;Github Pages&lt;/a&gt; and &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;, just follow the ones you need and don’t forget to leave a comment below.&lt;/p&gt;
+
+&lt;p class=&quot;thi-tip&quot;&gt;&lt;i class=&quot;material-icons mat-icon&quot;&gt;info&lt;/i&gt;I’m not a native English speaker, please ignore my bad expressions.&lt;/p&gt;
+
+&lt;div id=&quot;toc&quot;&gt;
+  &lt;div class=&quot;toc-title&quot;&gt;
+    &lt;i class=&quot;material-icons mat-icon&quot;&gt;toc&lt;/i&gt;&lt;span&gt;In this post&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div id=&quot;full&quot;&gt;
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#how-to-create-a-github-page&quot; id=&quot;markdown-toc-how-to-create-a-github-page&quot;&gt;How to create a Github Page?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#how-to-apply-notetheme&quot; id=&quot;markdown-toc-how-to-apply-notetheme&quot;&gt;How to apply NoteTheme?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#get-some-errors&quot; id=&quot;markdown-toc-get-some-errors&quot;&gt;Get some errors?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;how-to-create-a-github-page&quot;&gt;How to create a Github Page?&lt;/h2&gt;
+
+&lt;p&gt;In the case you don’t have any Github Page, follow following rules, otherwise please step to next steps. &lt;strong&gt;For Vietnameses&lt;/strong&gt;, please read &lt;a href=&quot;https://toituhoc.xyz/huong-dan-nhanh-tao-trang-web-github-page-dung-theme-co-san&quot;&gt;this article&lt;/a&gt;.&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/join?source=header-home&quot;&gt;Create&lt;/a&gt; a Github account, don’t forget to verify your email before loging in. I suppose that you signed up with name &lt;code class=&quot;highlighter-rouge&quot;&gt;dinhanhthi&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Login to your Github account.&lt;/li&gt;
+  &lt;li&gt;Create a new repository by clicking &lt;strong&gt;New&lt;/strong&gt; on the right side of &lt;em&gt;Repositories&lt;/em&gt; section and naming your repo with &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;your-account&amp;gt;.github.io&lt;/code&gt;. For example, my Github account is “&lt;em&gt;dinhanhthi&lt;/em&gt;”, so I name this repo “&lt;em&gt;dinhanhthi.github.io&lt;/em&gt;”. We need to name the repo like this because your website will have an address like &lt;strong&gt;https://&amp;lt;your-account&amp;gt;.github.io&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;Basically, you now have a place where you can put your website, you can choose either a built-in theme from Github or an external theme.
+    &lt;ul&gt;
+      &lt;li&gt;If you wanna apply &lt;strong&gt;&lt;a href=&quot;https://github.com/dinhanhthi/NoteTheme&quot;&gt;NoteTheme&lt;/a&gt;&lt;/strong&gt; (or &lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;other external theme&lt;/a&gt;), please step to next section (&lt;a href=&quot;#how-to-apply-notetheme&quot;&gt;How to apply NoteTheme&lt;/a&gt;) and ignore following steps in this section.&lt;/li&gt;
+      &lt;li&gt;If you wanna create immediately a buit-in theme from Github, please continue to step 5.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;On your repo on github, click on tab &lt;strong&gt;Settings&lt;/strong&gt;, on the left hand side, choose tab &lt;strong&gt;Options&lt;/strong&gt; (default) and then go to section &lt;strong&gt;Github Pages&lt;/strong&gt;, click on &lt;strong&gt;Choose a theme&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;Choose a theme you like and then click on &lt;strong&gt;Select theme&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;A new page appears, write something on &lt;strong&gt;Commit changes&lt;/strong&gt; and then click on &lt;strong&gt;Commit changes&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;Done, now you have a page, check it out at &lt;strong&gt;https://&amp;lt;your-account&amp;gt;.github.io&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p class=&quot;thi-tip&quot;&gt;&lt;i class=&quot;material-icons mat-icon&quot;&gt;info&lt;/i&gt;Don’t worry if you followed step 5-8 and you wanna apply other themes, just keep going to next section.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-apply-notetheme&quot;&gt;How to apply NoteTheme?&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Download and install &lt;strong&gt;&lt;a href=&quot;https://desktop.github.com/&quot;&gt;Github Client&lt;/a&gt;&lt;/strong&gt; (GC). GC helps you “upload” changes from local host (on your own computer) to your remote (on Github server).&lt;/li&gt;
+  &lt;li&gt;Login to GC with the account created in step 1.&lt;/li&gt;
+  &lt;li&gt;Clone the repo created in step 3 of previous section to your local computer:
+    &lt;ol&gt;
+      &lt;li&gt;Come back to the repo’s directory, click on &lt;strong&gt;Set up in Desktop&lt;/strong&gt;, a popup appears to ask you “&lt;em&gt;Open Github Desktop?&lt;/em&gt;”, choose &lt;strong&gt;Open Github Desktop&lt;/strong&gt;&lt;/li&gt;
+      &lt;li&gt;This will open GC on your computer, click on button &lt;strong&gt;Clone&lt;/strong&gt;&lt;/li&gt;
+      &lt;li&gt;Choose the location where you save your repo on your computer. A folder whose name is &lt;strong&gt;&amp;lt;your-account&amp;gt;.github.io&lt;/strong&gt; will be created.&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;From this step, you will apply a theme &lt;a href=&quot;http://jekyllthemes.org&quot;&gt;downloaded from the internet&lt;/a&gt; for your Github page. In this case, you will apply &lt;strong&gt;&lt;a href=&quot;https://github.com/dinhanhthi/NoteTheme&quot;&gt;NoteTheme&lt;/a&gt;&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;Download &lt;a href=&quot;https://github.com/dinhanhthi/NoteTheme&quot;&gt;NoteTheme&lt;/a&gt; to your local computer (a file .zip)&lt;/li&gt;
+  &lt;li&gt;Delete all files and folders in folder &lt;strong&gt;&amp;lt;your-account&amp;gt;.github.io&lt;/strong&gt; created in step 3.3.&lt;/li&gt;
+  &lt;li&gt;Extract all files and folders from file .zip in step 5 to folder &lt;strong&gt;&amp;lt;your-account&amp;gt;.github.io&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Open file &lt;strong&gt;_config.yml&lt;/strong&gt; and change some fields in this file
+    &lt;ol&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;title&lt;/code&gt;: your website’s name&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;description&lt;/code&gt;: your website’s description&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;baseurl&lt;/code&gt;: leave blank (i.e., &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;&quot;&lt;/code&gt;)&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;url&lt;/code&gt;: &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;your-account&amp;gt;.github.io&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;paginate&lt;/code&gt;: number of posts on each page (default is 28)&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;banner&lt;/code&gt;: directory to your website’s banner&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;favicon&lt;/code&gt;: directory to your website’s favicon (icon appears on the left on browser’s tab)&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;user&lt;/code&gt;: change all your personal information (&lt;code class=&quot;highlighter-rouge&quot;&gt;name&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;email&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;website&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;avatar&lt;/code&gt;,…)&lt;/li&gt;
+      &lt;li&gt;Save and close &lt;strong&gt;_config.yml&lt;/strong&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Open Github Desktop to see the changes
+    &lt;ol&gt;
+      &lt;li&gt;Write something on field commit&lt;/li&gt;
+      &lt;li&gt;Click on &lt;strong&gt;Commit to master&lt;/strong&gt; and then &lt;strong&gt;Publish branch&lt;/strong&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;All done! Go to &lt;strong&gt;https://&amp;lt;your-account&amp;gt;.github.io&lt;/strong&gt; to see the changes, you may wait a little minutes to get the changes.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;get-some-errors&quot;&gt;Get some errors?&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;If you have some unexpected errors, please tell me on the comment section below.&lt;/li&gt;
+  &lt;li&gt;If you wanna config more on this theme, please read &lt;a href=&quot;/how-to-use-notetheme&quot;&gt;How to use NoteTheme&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;If you find something wrong on this post, please tell me to fix them.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Thank you and good luck.&lt;/p&gt;</content><author><name></name></author><category term="sql" /><category term="jekyll" /><category term="theme" /><summary type="html">In this tutorial, I suppose that you are new to Github Pages and Jekyll, just follow the ones you need and don’t forget to leave a comment below.</summary></entry></feed>

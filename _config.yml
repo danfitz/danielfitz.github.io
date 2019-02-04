@@ -1,3 +1,43 @@
-name: Dan Fitz
+title: Dan Fitz
+description: A place for me to organize knowledge
+baseurl: ""
+url: danielfitz.github.io 
+repository: danielfitz/danielfitz.github.io 
+paginate: 10
+
+banner: "/assets/res/banner.png" # site banner (load when someone share your page url)
+favicon: "/assets/res/me.jpg" # site's favicon (icon left side of your page)
+
+# MatJek specific configurations
+user: 
+  name: "Dan Fitz"
+  email: "dan.fitz@pm.me"
+  website: "danielfitz.github.io"
+  avatar: "/assets/res/me.jpg"
+  github: "danielfitz"
+google_tracking_id: ""
+google_site_verification: ""
+disqus_shortname: danfitz 
+
+# Build settings
 markdown: kramdown
-permalink: /:categories/:title
+highlighter: rouge
+permalink: /:title
+
+
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-archives
+  - jekyll-redirect-from
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+sass:
+  style: compressed
+
+  future: true

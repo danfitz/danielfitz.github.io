@@ -1,21 +1,9 @@
+<!DOCTYPE html>
 <html>
-  
-  <head>
-    <title>{{ page.title }} - Dan Fitz</title>
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
-  
-  <body>
-    <header>
-      <div id="siteTitle"><a href="/">Dan Fitz</a></div>
-      <div id="siteDescription">This is a place to post my study notes</div>
-    </header>
-    
-    <main>
-      {{ content }}
-    </main>
-  
-  </body>
-
+{% include head.html %}
+<body>
+	{{ content }}
+	{% include backtotop.html %}
+	{% include footer.html %}
+</body>
 </html>
