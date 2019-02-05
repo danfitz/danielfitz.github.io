@@ -2,45 +2,26 @@
 layout: page
 css: ["index.css"]
 ---
-
 <div class="row">
-
-  <div>
-    {% include search_form.html %}
-  </div>
-
-  <!-- <div class="tag-div" style="margin-top: 1rem;">
-    <h2 class="h2-title">Categories</h2>
-    <div class="tag-list">
-      {% for cat in site.categories %}
-        {% for catDat in site.data.categories %}
-          {% if catDat.slug == cat[0] %}
-            {% assign catego = catDat %}
-          {% endif %}
-        {% endfor %}
-        {% if catego %}
-          {% capture test %}{{cat[0] | slice: 0}}{% endcapture %}
-          {% capture testup %}{{cat[0] | slice: 0 | upcase}}{% endcapture %}
-          <a class="tag-chip" href="{{ site.baseurl }}/categories#{{cat[0] | slugify}}{% if test == testup %}_cap{% endif %}"><div class="chip z-depth-1">{{ catego.name }}</div></a>
-        {% endif %}
-      {% endfor %}
+  {% for post in paginator.posts %}
+  <div class="col s12">
+    <div class="card hoverable">
+      <div class="card-content">
+        <span id="post-title" class="card-title">{{post.title}}</span>
+        <p id="post-date">
+          <i class="material-icons">date_range</i>
+          {{post.date | date: "%d/%m/%Y %H:%M"}}
+        </p>
+        <p id="post-content">{{post.excerpt | remove: '<p>' | remove: '</p>'}}</p>
+      </div>
+      <div class="card-action">
+        <a href="{{post.url | prepend: site.baseurl}}">
+          Read More
+        </a>
+      </div>
     </div>
-  </div> -->
-
-  <!-- <h2 class="h2-title">List of notes</h2> -->
-
-  <div class="thi-columns">
-    <ul class="tag-post">
-    {% for post in paginator.posts %}
-      <a class="post-title" href="{{ site.baseurl }}{{ post.url }}">
-        <li>
-          {{ post.title }} <small class="post-date">{{post.date | date: "%d/%m/%Y"}}</small>
-        </li>
-      </a>
-    {% endfor %}
-    </ul>
   </div>
-
+  {% endfor %}
   <div class="col s12 center-align">
     <ul class="pagination">
       <li class="{% unless paginator.previous_page %}disabled{% else %}waves-effect{% endunless %}">
@@ -82,17 +63,4 @@ css: ["index.css"]
       </li>
     </ul>
   </div>
-
-  <div class="tag-div">
-    <h2 class="h2-title">Tags</h2>
-    <div class="tag-list">
-      {% for tag in site.tags %}
-        {% capture test %}{{tag[0] | slice: 0}}{% endcapture %}
-        {% capture testup %}{{tag[0] | slice: 0 | upcase}}{% endcapture %}
-        <a class="tag-chip" href="{{ site.baseurl }}/tags#{{tag[0] | slugify}}{% if test == testup %}_cap{% endif %}"><div class="chip z-depth-1">{{tag[0]}}</div></a>
-      {% endfor %}
-    </div>
-  </div>
-  
 </div>
-

@@ -1,37 +1,68 @@
-# NoteTheme
+# MatJek
 
-This theme is folked from [Matjek theme](https://shawnteoh.github.io/matjek/) which is based on [materializecss](https://materializecss.com/) framework.
-
-I have modified a lot from Matjek so that we have this theme for **the only purpose of note-taking**. This theme is designed for ones who work much on **Maths and Code** with a lot of useful components.
-
+A responsive [Material](https://material.io/) theme based on [Materialize.css](http://materializecss.com/) for jekyll sites.
 
 ## Features
 
-- Clean & **Simple** & **Beautiful** (see [demo](https://dinhanhthi.github.io/NoteTheme/))
-- Full supports and **frequently update**
-- Support a lot of useful **components for taking notes** (see [full list](http://dinhanhthi.github.io/NoteTheme/how-to-use-notetheme))
-- Display **Table of Contents** automatically on a fix sidebar (and on the post content)
-- Integrate **[disqus](http://disqus.com)** comment system.
-- Integrate **[Mathjax](https://www.mathjax.org/)** which supports typing math equations.
-- Integrate **[DataCamp Light](https://github.com/datacamp/datacamp-light)** which supports embedding side-by-side Python/R code enviroment (see [demo](https://cdn.datacamp.com/dcl-react/standalone-example.html) for this)
-- Supoort **search** on site quickly ([demo](http://dinhanhthi.github.io/NoteTheme/search?q=welcome))
-- Support **tags and categories** for posts.
-- Mobile friendly
-- Search engine friendly
-- **Invisible** option : make your site invisible to search engines
+* Google Analytics
+* Disqus
+* [GitHub project page](https://shawnteoh.github.io/matjek/projects/)
+* [Tags](https://shawnteoh.github.io/matjek/tags/) and [Categories](https://shawnteoh.github.io/matjek/categories/)
+* Modular CSS and JS includes ([example](https://github.com/ShawnTeoh/matjek/blob/gh-pages/projects.md/))
+* [Fancy "About" page](https://shawnteoh.github.io/matjek/about)
 
+## Installation
 
-## How to install
+Clone or fork this repo and edit `_config.yml` as needed.
 
-- Download from [Github repository](https://github.com/dinhanhthi/NoteTheme). Please change to branch **gh-pages** to see the whole code files.
-- Follow [this instruction](https://dinhanhthi.github.io/how-to-install-notetheme) carefully. I show you **from the beginning** how to create a github page with jekyll and then to apply NoteTheme and use it.
+## Configuration
 
+Most of the configurations can be found in `_config.yml`. The configurations listed below are specific to MatJek. If you are not using `google_tracking_id` or `disqus_shortname`, just remove them completely.
 
-## How to use it?
+```yaml
+github_profile: "github_profile_url"
+user: "your_name" # Appears at sidebar
+user_email: "your_email" # Appears at sidebar, remove whole variable if unwanted
+contact_url: "google_form_link"
+google_tracking_id: "google_analytics_ID"
+disqus_shortname: "shortname_given_by_Disqus"
+```
 
-- Folow [this instruction](http://dinhanhthi.github.io/NoteTheme/how-to-use-notetheme) carefully.
+Edit the images in `assets/res` to suit your liking, but try to stick to the original resolutions.
 
+If you would like to enable comments in a post (disqus_shortname must be provided), add this line to the front matter of the post.
 
-## Contact & support
+```yaml
+comments: 1
+```
 
-Email me at: [dinhanhthi@gmail.com](mailto:dinhanhthi@gmail.com)
+Add tags and categories to your posts in the front matter as well. Multiple tags/categories can be assigned but need to be separated by spaces.
+
+```yaml
+categories: default default2
+tags: test test2
+```
+
+## Contributing
+
+Bug reports and pull requests are welcomed on GitHub at https://github.com/shawnteoh/matjek. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+
+## Development
+
+To set up your environment to develop this theme, clone/fork the repo and run `bundle install`.
+
+To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000/matjek/`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
+
+## License
+
+The theme is available as open source under the terms of the [GPL v3 License](https://www.gnu.org/licenses/gpl-3.0.en.html).
+
+## Libraries
+* [Materialize.css](http://materializecss.com/)
+* [GeoPattern](https://github.com/btmills/geopattern/)
+* [Animate.css](https://daneden.github.io/animate.css/)
+* [Morphtext](http://morphext.fyianlai.com/)
+
+## References
+* https://github.com/DONGChuan/Yummy-Jekyll/
+* https://github.com/codinfox/codinfox-lanyon/

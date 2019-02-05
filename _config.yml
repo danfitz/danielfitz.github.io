@@ -1,43 +1,46 @@
-title: Dan Fitz
-description: A place for me to organize knowledge
-baseurl: ""
-url: danielfitz.github.io 
-repository: danielfitz/danielfitz.github.io 
-paginate: 10
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-banner: "/assets/res/banner.png" # site banner (load when someone share your page url)
-favicon: "/assets/res/me.jpg" # site's favicon (icon left side of your page)
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Dan Fitz
+description: > # this means to ignore newlines until "baseurl:"
+  This site is my <a href="https://en.wikipedia.org/wiki/The_Extended_Mind">extended mind</a>
+baseurl: ""
+url: "https://danielfitz.github.io"
+permalink: /:title
+repository: danielfitz/danielfitz.github.io
+paginate: 5
 
 # MatJek specific configurations
-user: 
-  name: "Dan Fitz"
-  email: "dan.fitz@pm.me"
-  website: "danielfitz.github.io"
-  avatar: "/assets/res/me.jpg"
-  github: "danielfitz"
-google_tracking_id: ""
-google_site_verification: ""
-disqus_shortname: danfitz 
+github_profile: "https://github.com/danielfitz"
+user: "Dan Fitz"
+user_email: "dan.fitz@pm.me"
+contact_url: "https://goo.gl/tVljbV"
+# google_tracking_id: "UA-96359860-1"
+# google_site_verification: "UA-96359860-1"
+# disqus_shortname: "matjek"
 
 # Build settings
 markdown: kramdown
-highlighter: rouge
-permalink: /:title
-
-
 plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-archives
-  - jekyll-redirect-from
-
 exclude:
   - Gemfile
   - Gemfile.lock
-
 sass:
   style: compressed
-
-  future: true
+future: true
